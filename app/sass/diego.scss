@@ -50,19 +50,18 @@ body{
 }
 
 .rectangulo-titulo, .rectangulo-servicios, .rectangulo-servicios2{
-  width: 30px;
-  height: 8px;
+  width: 40px;
+  height: 10px;
   background-color:#E86C00;
 }
 
 .rectangulo-servicios2{
-  color: #BCB658!important;
+  background-color: #BCB658!important;
 }
 
 .titulo-seccion{
   font-size: 68px;
   color: white;
-  padding: 10px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -83,4 +82,9 @@ body{
   width: 120px;
   margin: 10px;
 
+}
+
+.contenedor-flex img{
+  overflow: hidden;
+  width: 100%;
 }
