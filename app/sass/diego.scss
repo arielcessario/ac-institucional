@@ -1,0 +1,82 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.gris-claro{
+  background-color: darkgray;
+}
+
+.rojo-claro{
+  background-color: lightcoral;
+}
+
+
+.contenedor-principal{
+  min-width: 400px;
+  text-align: center;
+}
+
+.menu2{
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.logo{
+  height: 400px;
+  background-color: lightsalmon;
+  margin: auto;
+  color: white;
+}
+
+.contenedor{
+  width: 100%;
+  text-align: left;
+}
+
+.cuadrado{
+  width: 40%;
+  height: 40%;
+  min-width: 350px;
+  margin: 10px auto;
+}
+
+.contacto{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.rectangulo-titulo{
+  width: 30px;
+  height: 8px;
+  background-color:#E86C00;
+}
+
+.titulo-seccion{
+  font-size: 68px;
+  color: white;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.parrafo-seccion{
+  color: black;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.flex-servicios{
+  width: 100px;
+  margin: 5px auto;
+
+}
