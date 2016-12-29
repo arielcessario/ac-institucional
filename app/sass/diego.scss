@@ -49,10 +49,14 @@ body{
 
 }
 
-.rectangulo-titulo{
+.rectangulo-titulo, .rectangulo-servicios, .rectangulo-servicios2{
   width: 30px;
   height: 8px;
   background-color:#E86C00;
+}
+
+.rectangulo-servicios2{
+  color: #BCB658!important;
 }
 
 .titulo-seccion{
@@ -76,7 +80,7 @@ body{
 }
 
 .flex-servicios{
-  width: 100px;
-  margin: 5px auto;
+  width: 120px;
+  margin: 10px;
 
 }
