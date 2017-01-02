@@ -115,11 +115,7 @@ body{
 }
 
 .contenedor-estadisticas{
-  -webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInLeft 2s; /* Firefox < 16 */
-  -ms-animation: fadeInLeft 2s; /* Internet Explorer */
-  -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
-  animation: fadeInLeft 2s;
+
   h1{
     color: white;
     font-size: 3em;
@@ -154,7 +150,6 @@ body{
   text-align: center;
   position: absolute;
   background:rgba(0,0,0,.75);
-  padding:45px 0 66px 0;
   opacity:0;
   -webkit-transition: opacity .25s ease;
   -moz-transition: opacity .25s ease
@@ -165,7 +160,7 @@ body{
   top: 40%;
   left: 0;
   width: 100%;
-  position: absolute;
+  position: relative;
   color: white;
   font-size: 22px;
 }
