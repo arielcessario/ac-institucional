@@ -4,7 +4,7 @@
             <source src="./images/file.mp4" type="video/webm"></source>
         </video>
         <div class="menu2" style="position: absolute">
-            HOME
+            <div ng-click="appCtrl.goToAnchor('prueba')">HOME</div>
             SERVICIOS
             NOSOTROS
             WORK
@@ -192,7 +192,7 @@
     </div>
 
 </div>
-<div class="contenedor" style="position: relative; overflow: hidden">
+<div class="contenedor" id="prueba" style="position: relative; overflow: hidden">
     <div style="max-width: 850px; min-height: 150px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
         <video style="position: absolute;left: 0; top: 0" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
