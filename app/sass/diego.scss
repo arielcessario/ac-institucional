@@ -1,15 +1,41 @@
+//animations
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Giro {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  100% {
+      -ms-transform: rotate(360deg);
+    }
+}
+
+
+
+
 body{
   font-family: 'Raleway', sans-serif;
 }
-
-.gris-claro{
-  background-color: darkgray;
-}
-
-.rojo-claro{
-  background-color: lightcoral;
-}
-
 
 .contenedor-principal{
   min-width: 400px;
@@ -26,7 +52,6 @@ body{
 
 .logo{
   height: 400px;
-  background-color: lightsalmon;
   margin: auto;
   color: white;
 }
@@ -53,6 +78,11 @@ body{
   width: 40px;
   height: 10px;
   background-color:#E86C00;
+  -webkit-animation: Giro 4s!important; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: Giro 4s!important; /* Firefox < 16 */
+  -ms-animation: Giro 4s; /* Internet Explorer */
+  -o-animation: Giro 4s; /* Opera < 12.1 */
+  animation: Giro 4s;
 }
 
 .rectangulo-servicios2{
@@ -68,6 +98,11 @@ body{
   line-height: 60px;
   margin-top: 10px;
   margin-bottom: 10px;
+  -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn 2s; /* Firefox < 16 */
+  -ms-animation: fadeIn 2s; /* Internet Explorer */
+  -o-animation: fadeIn 2s; /* Opera < 12.1 */
+  animation: fadeIn 2s;
 }
 
 .parrafo-seccion{
@@ -75,16 +110,93 @@ body{
   font-size: 16px;
   line-height: 20px;
   font-family: 'Raleway', sans-serif;
+  -webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInLeft 2s; /* Firefox < 16 */
+  -ms-animation: fadeInLeft 2s; /* Internet Explorer */
+  -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
+  animation: fadeInLeft 2s;
 
 }
 
 .flex-servicios{
   width: 120px;
   margin: 10px;
+  -webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInLeft 2s; /* Firefox < 16 */
+  -ms-animation: fadeInLeft 2s; /* Internet Explorer */
+  -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
+  animation: fadeInLeft 2s;
 
+}
+
+.contenedor-estadisticas{
+  -webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInLeft 2s; /* Firefox < 16 */
+  -ms-animation: fadeInLeft 2s; /* Internet Explorer */
+  -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
+  animation: fadeInLeft 2s;
+  h1{
+    color: white;
+    font-size: 3em;
+    margin: 0.67em 0;
+  }
+  h2{
+    color: white;
+    font-family: inherit;
+    line-height: 22px;
+    font-size: 18px;
+  }
 }
 
 .contenedor-flex img{
   overflow: hidden;
   width: 100%;
+  height: 100%;
 }
+
+.contenedor-nosotros{
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.overlay{
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  background:rgba(0,0,0,.75);
+  padding:45px 0 66px 0;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease
+}
+
+.overlay span{
+  font-family: 'Raleway', sans-serif;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-size: 22px;
+}
+
+.contenedor-nosotros:hover .overlay{
+  opacity:1;
+  cursor: pointer;
+}
+
+.contenedor-trabajos{
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor-trabajos:hover .overlay{
+  opacity:1;
+  cursor: pointer;
+}
+
