@@ -1,20 +1,25 @@
 <div class="contenedor-principal">
     <div class="contenedor-secundario" style="position: relative; overflow: hidden; min-height: 500px;">
-        <video style="position: absolute; left: 0; top: 0" preload="preload" id="video" autoplay="autoplay" loop="loop">
+        <video style="position: absolute; left: 0; top: 0; width: 100%" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
         </video>
-        <div class="menu2" style="position: absolute">
-            <div ng-click="appCtrl.goToAnchor('prueba')">HOME</div>
-            SERVICIOS
-            NOSOTROS
-            WORK
-            EQUIPO
-            CONTACTO
+        <div class="menu2" style="position: absolute; display: flex">
+            <div style="width: 188px; height:64px;margin: 10px"><img src="./images/logo.svg" alt=""></div>
+            <div style="margin: auto; text-align: center; display: flex">
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">HOME</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">SERVICIOS</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">NOSOTROS</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">WORK</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">EQUIPO</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">CONTACTO</div>
+            </div>
         </div>
-            <div class="logo" style="position: relative; top: 100px">logo
-                <div style="max-width: 850px;">
-                    <h1>Bienvenidos</h1>
-                    <h2 ac-animate animation-in="flex-servicios-animate">SOLUCIONES INFORMATICAS PARA TODO EL MUNDO</h2>
+
+        <div class="logo" style="position: relative; top: 100px">
+                <div style="max-width: 850px; text-align: center; margin: auto">
+                    <h1 style="text-align: left">Bienvenidos a</h1>
+                    <div class="logo"><img src="./images/logo.svg" alt=""></div>
+                    <h2 ac-animate animation-in="flex-servicios-animate" style="position: absolute; bottom: 20px; right: 165px; font-size: 18px">SOLUCIONES INFORMATICAS PARA TODO EL MUNDO</h2>
                 </div>
             </div>
         </div>
@@ -22,7 +27,7 @@
 
     <div class="contenedor" style="background-color: black">
         <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
-            <div class="rectangulo-titulo"></div>
+            <div class="rectangulo-titulo animated pulse" ></div>
             <span class="titulo-seccion"  ac-animate animation-in="flex-servicios-animate">Nuestros<br>Servicios</span>
             <p class="parrafo-seccion" style="color: white">Brindamos Diseños Web originales y a la medida de cada
                 proyecto.<br>
@@ -88,17 +93,17 @@
         </div>
     </div>
     <div class="contenedor" style="position: relative; overflow: hidden">
-        <video style="position: absolute;left: 0; top: 0" preload="preload" id="video" autoplay="autoplay" loop="loop">
+        <video style="position: absolute;left: 0; top: 0; width: 100%" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
         </video>
         <div style="max-width: 850px; margin: auto; padding-top: 20px; position: relative; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
-            <div class="rectangulo-titulo"></div>
+            <div class="rectangulo-titulo animated pulse2"></div>
             <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate">QUIENES<br>SOMOS</span>
             <p class="parrafo-seccion" ac-animate animation-in="flex-servicios-animate">Somos una empresa con más de tres años de experiencia en desarrollo de sistemas y
                 páginas web.
                 Además funcionamos como incubadora de startups, ayudando a las Pymes a crecer mediante el uso de
                 herramientas subsidiarias nacionales. <br> <br>
-                <b style="font-size: 22px">NUESTRA MISION</b> <br>
+                <b style="font-size: 22px; color: white">NUESTRA MISION</b> <br>
                 Arrancamos con un sueño, acercar a las empresas en desarrollo las ultimas tecnologias del mercado a nivel
             informático,
             brindandoles un servicio premium de primer nivel, a un costo accesible, y con el máximo soporte y
@@ -114,9 +119,9 @@
         </div>
     </div>
     <div class="contenedor" style="background-color: white">
-        <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
-            <div class="rectangulo-titulo"></div>
-            <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black">Nuestro Trabajo</span>
+        <div style="max-width: 850px; margin: auto; padding-top: 100px; padding-bottom: 100px; padding-left: 10px; padding-right: 10px">
+            <div class="rectangulo-titulo animated pulse"></div>
+            <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black;">Nuestro Trabajo</span>
         </div>
 
         <div class="contenedor-flex" style="flex-direction: column; display: flex; width: 100%">
@@ -124,34 +129,34 @@
             <div style="display:flex; flex-direction: row">
                 <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-1.jpg" alt="">
                     <div class="overlay">
-                        <span><b style="font-weight: bolder">HYDROX</b><br>Diseño Web</span>
+                        <span><b style="font-weight: bolder; color: #E86C00">HYDROX</b><br>Diseño Web</span>
                     </div>
                 </div>
                 <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-2.jpg" alt="">
                     <div class="overlay">
-                        <span><b style="font-weight: bolder">GK CEPILLOS</b><br>Diseño Web</span>
+                        <span><b style="font-weight: bolder; color: #E86C00">GK CEPILLOS</b><br>Diseño Web</span>
                     </div>
                 </div>
                 <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-3.png" alt="">
                     <div class="overlay">
-                        <span><b style="font-weight: bolder">BAYRES NO PROBLEM</b><br>Diseño Web</span>
+                        <span><b style="font-weight: bolder; color: #E86C00">BAYRES NO PROBLEM</b><br>Diseño Web</span>
                     </div>
                 </div>
             </div>
             <div style="display:flex; flex-direction: row">
                 <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-4.png" alt="">
                     <div class="overlay">
-                        <span><b style="font-weight: bolder">CORPOCAR</b><br>Diseño Web</span>
+                        <span><b style="font-weight: bolder; color: #E86C00">CORPOCAR</b><br>Diseño Web</span>
                     </div>
                 </div>
                 <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-5.png" alt="">
                     <div class="overlay">
-                        <span><b style="font-weight: bolder">MI PRIMER ESPONSOR</b><br>Diseño Web</span>
+                        <span><b style="font-weight: bolder; color: #E86C00">MI PRIMER ESPONSOR</b><br>Diseño Web</span>
                     </div>
                 </div>
                 <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-6.jpg" alt="">
                     <div class="overlay">
-                        <span><b style="font-weight: bolder">UIGLP</b><br>Diseño Web</span>
+                        <span><b style="font-weight: bolder; color: #E86C00">UIGLP</b><br>Diseño Web</span>
                     </div>
                 </div>
             </div>
@@ -160,7 +165,7 @@
     </div>
     <div class="contenedor" style="background-color: white">
         <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
-            <div class="rectangulo-titulo"  ac-animate animation-in="flex-servicios-animate"></div>
+            <div class="rectangulo-titulo animated pulse2"></div>
             <span class="titulo-seccion"  ac-animate animation-in="flex-servicios-animate" style="color: black">Nuestros<br>Clientes.</span>
             <p class="parrafo-seccion" ac-animate animation-in="flex-servicios-animate" style="font-weight: bolder; font-size: 24px;top: 128px">ALGUNAS DE LAS EMPRESAS CON LAS QUE TRABAJAMOS</p>
             <div class="contenedor-flex" style="flex-direction: column; display: flex; width: 100%">
@@ -193,32 +198,32 @@
 </div>
 <div class="contenedor" id="prueba" style="position: relative; overflow: hidden">
     <div style="max-width: 850px; min-height: 150px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
-        <video style="position: absolute;left: 0; top: 0" preload="preload" id="video" autoplay="autoplay" loop="loop">
+        <video style="position: absolute;left: 0; top: 0; width: 100%" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
         </video>
         <div class="rectangulo-titulo" style="position: absolute"></div>
         <span class="titulo-seccion" style="color: black; position: absolute">Nuestro <br> Equipo.</span>
-        <p class="parrafo-seccion" ac-animate animation-in="flex-servicios-animate" style="font-weight: bolder; font-size: 24px;top: 128px; position: absolute">A TUS ORDENES</p>
+        <p class="parrafo-seccion" ac-animate animation-in="flex-servicios-animate" style="font-weight: bolder; color:white; font-size: 24px;top: 128px; position: absolute">A TUS ORDENES</p>
     </div>
     <div class="contenedor-flex" style="flex-direction: row; display: flex; flex-wrap:wrap; width: 100%">
         <div style="display:flex; flex-wrap:wrap; flex-direction: row; width: 100%">
             <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-diego.png" alt="">
                 <div class="overlay">
-                    <span><b style="font-weight: bolder">DIEGO YANKELEVICH</b><br>Diseñador Multimedia</span></div>
+                    <span><b style="font-weight: bolder; color: #E86C00">DIEGO YANKELEVICH</b><br>Diseñador Multimedia</span></div>
             </div>
             <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-pela.png" alt="">
                 <div class="overlay">
-                    <span><b style="font-weight: bolder">ARIEL CESSARIO</b><br>Programador Senior</span>
+                    <span><b style="font-weight: bolder; color: #E86C00">ARIEL CESSARIO</b><br>Programador Senior</span>
                 </div>
             </div>
             <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-matata.png" alt="">
                 <div class="overlay">
-                    <span><b style="font-weight: bolder">MATEO MANEFF</b><br>Programador Senior</span>
+                    <span><b style="font-weight: bolder; color: #E86C00">MATEO MANEFF</b><br>Programador Senior</span>
                 </div>
             </div>
             <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-julito.png" alt="">
                 <div class="overlay">
-                    <span><b style="font-weight: bolder">JULIO LAVAGGI</b><br>Analista de sistemas</span>
+                    <span><b style="font-weight: bolder; color: #E86C00">JULIO LAVAGGI</b><br>Analista de sistemas</span>
                 </div>
             </div>
         </div>
@@ -226,7 +231,7 @@
 </div>
 <div class="contenedor" style="background-color: #3D9BE9">
     <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
-        <div class="rectangulo-titulo" style="background-color: #FBE083!important;"></div>
+        <div class="rectangulo-titulo animated pulse"></div>
         <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: #FBE083; text-transform: none">Aceleradora de Startups.</span>
         <p class="parrafo-seccion" style="color: white">Hace unos años nos dimos cuenta que podíamos hacer mucho más, no
             solo ofrecer sistemas, Branding y servicios de diseño web, sino que también podíamos ayudar a nuevos

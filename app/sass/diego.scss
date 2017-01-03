@@ -20,17 +20,18 @@
   }
 }
 
-@keyframes Giro {
-  0% {
-    -ms-transform: rotate(0deg);
-  }
 
-  100% {
-      -ms-transform: rotate(360deg);
-    }
+@keyframes pulse {
+  0% {transform: scale(1); background-color:#BCB658;}
+  50% {transform: scale(1.1);background-color: #E86C00;}
+  100% {transform: scale(1);background-color:#BCB658;}
 }
 
-
+@keyframes pulse2 {
+  0% {transform: scale(1); background-color: #ffffff;}
+  50% {transform: scale(1.1);background-color: #1B1B1E;}
+  100% {transform: scale(1);background-color:#FFFFFF;}
+}
 
 
 body{
@@ -43,11 +44,25 @@ body{
 }
 
 .menu2{
-  height: 50px;
+  height: 85px;
   text-align: center;
   width: 100%;
-  background-color: black;
+  background-color:rgba(0,0,0,.3);
   color: white;
+  margin: auto;
+  }
+
+.menu-principal{
+  margin: 20px;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+}
+
+.menu-principal:hover{
+  color: #BCB658;
+  cursor: pointer;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
 }
 
 .logo{
@@ -77,13 +92,9 @@ body{
 .rectangulo-titulo, .rectangulo-servicios, .rectangulo-servicios2{
   width: 40px;
   height: 10px;
+  margin-bottom: 10px;
   background-color:#E86C00;
-  -webkit-animation: Giro 4s!important; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: Giro 4s!important; /* Firefox < 16 */
-  -ms-animation: Giro 4s; /* Internet Explorer */
-  -o-animation: Giro 4s; /* Opera < 12.1 */
-  animation: Giro 4s;
-}
+ }
 
 .rectangulo-servicios2{
   background-color: #BCB658!important;
@@ -186,4 +197,33 @@ body{
   -ms-animation: fadeInLeft 2s; /* Internet Explorer */
   -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
   animation: fadeInLeft 2s;
+}
+
+.logo{
+ margin: auto;
+  text-align: center;
+  -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeIn 2s; /* Firefox < 16 */
+  -ms-animation: fadeIn 2s; /* Internet Explorer */
+  -o-animation: fadeIn 2s; /* Opera < 12.1 */
+  animation: fadeIn 2s;
+
+
+}
+
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+.pulse2 {
+  animation-name: pulse2;
+  animation-duration: 1s;
+}
+
+.animated {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
 }
