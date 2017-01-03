@@ -15,6 +15,17 @@
             </div>
         </div>
 
+        <div class="menu-lado" style="position: fixed; display: flex">
+            <div style="margin: auto; text-align: left; display: flex; flex-direction: column">
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">HOME</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">SERVICIOS</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">NOSOTROS</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">WORK</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">EQUIPO</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">CONTACTO</div>
+            </div>
+        </div>
+
         <div class="logo" style="position: relative; top: 100px">
                 <div style="max-width: 850px; text-align: center; margin: auto">
                     <h1 style="text-align: left">Bienvenidos a</h1>
@@ -59,7 +70,7 @@
                 </div>
                 <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                     <div class="rectangulo-servicios"></div>
-                    <p style="color: white">Usamos tecnologías modernas y universales</p>
+                    <p style="color: white">Ritch Web Aplications</p>
                 </div>
                 <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                     <div class="rectangulo-servicios2"></div>
@@ -266,19 +277,42 @@
         </div>
     </div>
 </div>
-<div class="contenedor rojo-claro contacto">
-    <div class="cuadrado" style="display: flex; flex-direction: column">
-        <div class="rectangulo-titulo" style="background-color: white"></div>
-        <span class="titulo-seccion" style="color: black">CONTACTO</span>
-        <div style="min-width: 350px; height: 20px; background-color: white; margin-bottom: 10px"></div>
-        <div style="min-width: 350px; height: 20px; background-color: white; margin-bottom: 10px"></div>
-        <div style="min-width: 350px; height: 20px; background-color: white; margin-bottom: 10px"></div>
+<div class="contenedor rojo-claro contacto" style="position: relative; overflow: hidden">
+    <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; display: flex; flex-wrap: wrap">
+    <video style="position: absolute; left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
+        <source src="./images/file.mp4" type="video/webm"></source>
+    </video>
+    <div class="cuadrado" style="display: flex; flex-direction: column; position: relative">
+        <div class="rectangulo-titulo animated pulse2" ></div>
+        <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black">CONTACTO</span>
+        <div class="controls">
+            <label>Escribe tu nombre:</label>
+            <input ac-validator is-required="Debe ingresar un nombre" type="text"
+                   class="form-control" ng-model="contactoCtrl.nombre" id="contacto-nombre" >
+        </div>
+        <div class="controls controls-margin">
+            <label>E-mail:</label>
+            <input ac-validator is-mail="El mail es incorrecto" type="email"
+                   class="form-control"  ng-model="contactoCtrl.email" id="contacto-mail">
+        </div>
+        <div class="controls controls-margin">
+            <label>Asunto:</label>
+            <input ac-validator is-required="Debe ingresar un tema de consulta" type="text"
+                   class="form-control" ng-model="contactoCtrl.asunto" id="contacto-asunto">
+        </div>
+        <div class="controls controls-margin">
+            <label>Consulta:</label>
+                        <textarea ac-validator is-required="Debe ingresar una consulta" ng-model="contactoCtrl.mensaje"
+                                  class="form-control" name="" id="contacto-consulta" rows="10" style="height: 60px;"></textarea>
+        </div>
+        <button id="contacto-enviar-mobile" ac-validator ng-click="contactoCtrl.sendMail();">Enviar</button>
     </div>
-    <div class="cuadrado" style="display: flex; flex-direction: column">
+    <div class="cuadrado" style="display: flex; position: relative; flex-direction: column; margin-top: 150px">
         <h1 style="color: black; font-size: 18px">No aguantamos más las ganas de que nos escribas!</h1>
         <h2 style="font-size: 14px">El equipo <b>AC</b>Desarrollos
             info@ac-desarrollos.com</h2>
     </div>
 </div>
-<div class="contenedor" style="background-color: black; min-height: 200px"></div>
+</div>
+<div class="contenedor" style="background-color: black; min-height: 100px"></div>
 </div>
