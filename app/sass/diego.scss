@@ -60,6 +60,9 @@ body{
   background-color: rgba(0,0,0,.3);
   padding: 5px;
   z-index: 10000;
+  @media (max-width: 800px){
+    display: none!important;
+  }
 }
 
 .seccion-lado{
