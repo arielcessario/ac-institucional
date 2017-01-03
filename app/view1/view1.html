@@ -1,32 +1,49 @@
 <div class="contenedor-principal">
-    <div class="contenedor-secundario" style="position: relative; overflow: hidden; min-height: 500px;">
-        <video style="position: absolute; left: 0; top: 0; width: 100%" preload="preload" id="video" autoplay="autoplay" loop="loop">
+    <div class="contenedor-secundario" id="home" style="position: relative; overflow: hidden; min-height: 500px;">
+        <video style="position: absolute; left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
         </video>
         <div class="menu2" style="position: absolute; display: flex">
-            <div style="width: 188px; height:64px;margin: 10px"><img src="./images/logo.svg" alt=""></div>
+            <div class="contenedor-logo-menu" style="width: 200px;margin: auto;"><img src="./images/logo.svg" alt="">
+            <a ng-click="appCtrl.menu=!appCtrl.menu" href="" class="burguer example3"><span></span></a>
+            </div>
             <div style="margin: auto; text-align: center; display: flex">
-            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">HOME</div>
-            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">SERVICIOS</div>
-            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">NOSOTROS</div>
-            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">WORK</div>
-            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">EQUIPO</div>
-            <div class="menu-principal" ng-click="appCtrl.goToAnchor('prueba')">CONTACTO</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('home')">HOME</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('servicios')">SERVICIOS</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('mision')">MISION</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('work')">WORK</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('clientes')">CLIENTES</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('equipo')">EQUIPO</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('startups')">STARTUPS</div>
+            <div class="menu-principal" ng-click="appCtrl.goToAnchor('contacto')">CONTACTO</div>
             </div>
         </div>
 
-        <div class="menu-lado" style="position: fixed; display: flex">
+        <div class="menu-mobile" ng-class="{'menu-open':appCtrl.menu}" style="margin: auto; text-align: center;">
+            <div class="menu-mobile-item" ng-click="appCtrl.goToAnchor('home')">HOME</div>
+            <div class="menu-mobile-item" ng-click="appCtrl.goToAnchor('servicios')">SERVICIOS</div>
+            <div class="menu-mobile-item" ng-click="appCtrl.goToAnchor('mision')">MISION</div>
+            <div class="menu-mobile-item" ng-click="appCtrl.goToAnchor('work')">WORK</div>
+            <div class="menu-mobile-item" ng-click="appCtrl.goToAnchor('clientes')">CLIENTES</div>
+            <div class="menu-mobile-item" ng-click="appCtrl.goToAnchor('equipo')">EQUIPO</div>
+            <div class="menu-mobile-item" ng-click="appCtrl.goToAnchor('startups')">STARTUPS</div>
+            <div class="menu-mobile-item" ng-click="appCtrl.goToAnchor('contacto')">CONTACTO</div>
+        </div>
+
+           <div class="menu-lado" style="position: fixed; display: flex">
             <div style="margin: auto; text-align: left; display: flex; flex-direction: column">
-                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">HOME</div>
-                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">SERVICIOS</div>
-                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">NOSOTROS</div>
-                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">WORK</div>
-                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">EQUIPO</div>
-                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('prueba')">CONTACTO</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('home')">HOME</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('servicios')">SERVICIOS</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('mision')">MISION</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('work')">WORK</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('clientes')">CLIENTES</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('equipo')">EQUIPO</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('startups')">STARTUPS</div>
+                <div class="seccion-lado" ng-click="appCtrl.goToAnchor('contacto')">CONTACTO</div>
             </div>
         </div>
 
-        <div class="logo" style="position: relative; top: 100px">
+        <div class="logo" style="position: relative; top: 70px">
                 <div style="max-width: 850px; text-align: center; margin: auto">
                     <h1 style="text-align: left">Bienvenidos a</h1>
                     <div class="logo"><img src="./images/logo.svg" alt=""></div>
@@ -36,7 +53,7 @@
         </div>
     </div>
 
-    <div class="contenedor" style="background-color: black">
+    <div class="contenedor" id="servicios" style="background-color: black">
         <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
             <div class="rectangulo-titulo animated pulse" ></div>
             <span class="titulo-seccion"  ac-animate animation-in="flex-servicios-animate">Nuestros<br>Servicios</span>
@@ -103,8 +120,8 @@
             </div>
         </div>
     </div>
-    <div class="contenedor" style="position: relative; overflow: hidden">
-        <video style="position: absolute;left: 0; top: 0; width: 100%" preload="preload" id="video" autoplay="autoplay" loop="loop">
+    <div class="contenedor" id="mision" style="position: relative; overflow: hidden">
+        <video style="position: absolute;left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
         </video>
         <div style="max-width: 850px; margin: auto; padding-top: 20px; position: relative; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
@@ -129,7 +146,7 @@
             de nuestra parte para que cada empresa en este país tenga servicios de máxima calidad a un precio justo.</p>
         </div>
     </div>
-    <div class="contenedor" style="background-color: white">
+    <div class="contenedor" id="work" style="background-color: white">
         <div style="max-width: 850px; margin: auto; padding-top: 100px; padding-bottom: 100px; padding-left: 10px; padding-right: 10px">
             <div class="rectangulo-titulo animated pulse"></div>
             <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black;">Nuestro Trabajo</span>
@@ -174,7 +191,7 @@
         </div>
 
     </div>
-    <div class="contenedor" style="background-color: white">
+    <div class="contenedor" id="clientes" style="background-color: white">
         <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
             <div class="rectangulo-titulo animated pulse2"></div>
             <span class="titulo-seccion"  ac-animate animation-in="flex-servicios-animate" style="color: black">Nuestros<br>Clientes.</span>
@@ -207,9 +224,9 @@
     </div>
 
 </div>
-<div class="contenedor" id="prueba" style="position: relative; overflow: hidden">
+<div class="contenedor" id="equipo" style="position: relative; overflow: hidden">
     <div style="max-width: 850px; min-height: 150px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
-        <video style="position: absolute;left: 0; top: 0; width: 100%" preload="preload" id="video" autoplay="autoplay" loop="loop">
+        <video style="position: absolute;left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
         </video>
         <div class="rectangulo-titulo" style="position: absolute"></div>
@@ -240,7 +257,7 @@
         </div>
     </div>
 </div>
-<div class="contenedor" style="background-color: #3D9BE9">
+<div class="contenedor" id="startups" style="background-color: #3D9BE9">
     <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
         <div class="rectangulo-titulo animated pulse"></div>
         <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: #FBE083; text-transform: none">Aceleradora de Startups.</span>
@@ -277,7 +294,7 @@
         </div>
     </div>
 </div>
-<div class="contenedor rojo-claro contacto" style="position: relative; overflow: hidden">
+<div class="contenedor rojo-claro contacto" id="contacto" style="position: relative; overflow: hidden">
     <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; display: flex; flex-wrap: wrap">
     <video style="position: absolute; left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
         <source src="./images/file.mp4" type="video/webm"></source>

@@ -50,7 +50,80 @@ body{
   background-color:rgba(0,0,0,.3);
   color: white;
   margin: auto;
+  z-index: 10000;
+  @media (max-width: 800px){
+    display: block!important;
+    position: fixed!important;
+    background-color: white!important;
   }
+  }
+
+.menu-mobile-item{
+  font-size: 22px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.burguer{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  display:  inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 25px;
+  @media (min-width: 800px){
+    display: none!important;
+  }
+
+}
+.burguer span {
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
+}
+.burguer span:before, .burguer span:after {
+  position: absolute;
+  content: '';
+}
+.burguer span, .burguer span:before, .burguer span:after {
+  width: 30px;
+  height: 6px;
+  background-color: black;
+  display: block;
+}
+.burguer span:before {
+  margin-top: -12px;
+}
+.burguer span:after {
+  margin-top: 12px;
+}
+
+.example3 span {
+  -webkit-transition: 0.2s ease 0s; transition: 0.2s ease 0s;
+}
+.example3 span:before, .example3 span:after {
+  -webkit-transition-property: margin, opacity; transition-property: margin, opacity;
+  -webkit-transition-duration: 0.2s, 0s; transition-duration: 0.2s, 0s;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example3:hover span {
+  width: 6px;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example3:hover span:before, .example3:hover span:after {
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
+
+.contenedor-logo-menu{
+  @media (max-width: 800px){
+    margin: 10px auto!important;
+  }
+}
 
 .menu-lado{
   font-size: 12px;
@@ -77,9 +150,12 @@ body{
 }
 
 .menu-principal{
-  margin: 20px;
+  margin: 10px;
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
+  @media (max-width: 800px){
+    display: none!important;
+  }
 }
 
 .menu-principal:hover{
@@ -89,10 +165,27 @@ body{
 -moz-transition: all .25s ease-in-out;
 }
 
+.menu-mobile{
+  display: none;
+  top:85px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 200000;
+  background-color: black;
+}
+
+.menu-open{
+  display: block!important;
+}
 .logo{
   height: 400px;
   margin: auto;
   color: white;
+  img{
+    width: 90%;
+    left: 10px!important;
+  }
 }
 
 .contenedor{
