@@ -5,8 +5,6 @@ angular.module('myApp', [
   'ngRoute',
   'duScroll',
   'myApp.view1',
-  'myApp.view2',
-  'myApp.version',
   'acUtils',
   'acAnimate',
   'acContacts'
@@ -14,7 +12,15 @@ angular.module('myApp', [
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/'});
+
+  $routeProvider.when("/",
+      {
+        templateUrl: "view1/view1.html",
+        controller: "View1Ctrl",
+        controllerAs: "view1Ctrl"
+      }
+  );
 }])
     .controller('AppController', AppController);
 
@@ -26,7 +32,7 @@ function AppController($location, $timeout, $document) {
   vm.goToAnchor = goToAnchor;
 
   function goToAnchor(id) {
-    $location.path('/main');
+    $location.path('/');
 
     $timeout(function () {
       var duration = 1000;
