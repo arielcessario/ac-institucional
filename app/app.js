@@ -33,8 +33,8 @@ function AppController($location, $timeout, $document, $rootScope) {
     vm.selected = 'home';
 
     $rootScope.$on("emit-menu", function(event, args){
-        console.log(vm.selected);
         vm.selected = args.nombre;
+        
     });
 
 
