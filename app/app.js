@@ -30,10 +30,12 @@ function AppController($location, $timeout, $document) {
   var vm = this;
   vm.hideLoader = true;
   vm.goToAnchor = goToAnchor;
+  vm.selected = '';
 
   function goToAnchor(id) {
     $location.path('/');
 
+    vm.selected = id;
     $timeout(function () {
       var duration = 1000;
       var offset = 50; //pixels; adjust for floating menu, context etc
