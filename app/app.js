@@ -24,8 +24,8 @@ angular.module('myApp', [
     .controller('AppController', AppController)
     .directive('emitMenu', emitMenu);
 
-AppController.$inject = ['$location', '$timeout', '$document', '$rootScope'];
-function AppController($location, $timeout, $document, $rootScope) {
+AppController.$inject = ['$location', '$timeout', '$document', '$rootScope', '$scope'];
+function AppController($location, $timeout, $document, $rootScope, $scope) {
 
     var vm = this;
     vm.hideLoader = true;
@@ -34,7 +34,8 @@ function AppController($location, $timeout, $document, $rootScope) {
 
     $rootScope.$on("emit-menu", function(event, args){
         vm.selected = args.nombre;
-        
+        if (!$scope.$$phase && !$scope.$root.$$phase)
+            $scope.$apply();
     });
 
 
