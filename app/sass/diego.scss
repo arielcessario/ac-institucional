@@ -140,6 +140,7 @@ body{
   background-color: rgba(0,0,0,.3);
   padding: 5px;
   z-index: 10000;
+
   @media (max-width: 800px){
     display: none!important;
   }
@@ -426,17 +427,12 @@ body{
 }
 
 .flex-trabajos{
-  @media (max-width: 500px){
+  @media (max-width: 600px){
    flex-direction: column!important;
   }
-
 }
 
-.flex-trabajos div{
-  @media (max-width: 500px){
-    min-width: 100%!important;
-  }
-}
+
 
 .error-message{
   color: white!important;
@@ -447,5 +443,11 @@ body{
   -ms-animation: fadeInLeft 2s; /* Internet Explorer */
   -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
   animation: fadeInLeft 2s;
+
+}
+
+.menu-selected{
+  font-weight: bolder;
+  color: #E86C00;
 
 }

@@ -37,6 +37,7 @@ function AppController($location, $timeout, $document, $rootScope) {
     });
 
 
+
     function goToAnchor(id) {
         $location.path('/');
 

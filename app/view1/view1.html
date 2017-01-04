@@ -1,5 +1,5 @@
 <div class="contenedor-principal">
-    <div class="contenedor-secundario" id="home" style="position: relative; overflow: hidden; min-height: 500px;">
+    <div class="contenedor-secundario" id="home" style="position: relative; overflow: hidden; min-height: 500px;" emit-menu>
         <video poster="./images/poster.png" style="position: absolute; left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
         </video>
@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <div class="contenedor" id="servicios" style="background-color: black">
+    <div class="contenedor" id="servicios" style="background-color: black" emit-menu>
         <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
             <div class="rectangulo-titulo animated pulse" ></div>
             <span class="titulo-seccion"  ac-animate animation-in="flex-servicios-animate">Nuestros<br>Servicios</span>
@@ -120,7 +120,7 @@
             </div>
         </div>
     </div>
-    <div class="contenedor" id="mision" style="position: relative; overflow: hidden">
+    <div class="contenedor" id="mision" style="position: relative; overflow: hidden" emit-menu>
         <video poster="./images/poster.png" style="position: absolute;left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
         </video>
@@ -146,7 +146,7 @@
             de nuestra parte para que cada empresa en este país tenga servicios de máxima calidad a un precio justo.</p>
         </div>
     </div>
-    <div class="contenedor" id="work" style="background-color: white">
+    <div class="contenedor" id="work" style="background-color: white" emit-menu>
         <div style="max-width: 850px; margin: auto; padding-top: 100px; padding-bottom: 100px; padding-left: 10px; padding-right: 10px">
             <div class="rectangulo-titulo animated pulse"></div>
             <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black;">Nuestro Trabajo</span>
@@ -155,35 +155,35 @@
         <div class="contenedor-flex" style="flex-direction: column; display: flex; flex-wrap:wrap; width: 100%">
 
             <div class="flex-trabajos" style="display:flex; flex-direction: row">
-                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-1.png" alt="">
+                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img style="min-height:140px!important;" src="./images/trabajos-1.png" alt="">
                     <div class="overlay">
                         <span><b style="font-weight: bolder; color: #E86C00">HYDROX</b><br>Diseño Web</span>
                     </div>
                 </div>
 
-                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-2.png" alt="">
+                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img  style="min-height:140px!important;" src="./images/trabajos-2.png" alt="">
                     <div class="overlay">
                         <span><b style="font-weight: bolder; color: #E86C00">GK CEPILLOS</b><br>Diseño Web</span>
                     </div>
                 </div>
-                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-3.png" alt="">
+                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img  style="min-height:140px!important;" src="./images/trabajos-3.png" alt="">
                     <div class="overlay">
                         <span><b style="font-weight: bolder; color: #E86C00">BAYRES NO PROBLEM</b><br>Diseño Web</span>
                     </div>
                 </div>
             </div>
             <div class="flex-trabajos" style="display:flex; flex-direction: row; flex-wrap: wrap">
-                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-4.png" alt="">
+                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img style="min-height:140px!important;" src="./images/trabajos-4.png" alt="">
                     <div class="overlay">
                         <span><b style="font-weight: bolder; color: #E86C00">CORPOCAR</b><br>Diseño Web</span>
                     </div>
                 </div>
-                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-5.png" alt="">
+                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img  style="min-height:140px!important;" src="./images/trabajos-5.png" alt="">
                     <div class="overlay">
                         <span><b style="font-weight: bolder; color: #E86C00">MI PRIMER ESPONSOR</b><br>Diseño Web</span>
                     </div>
                 </div>
-                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img src="./images/trabajos-6.png" alt="">
+                <div class="contenedor-trabajos" style="flex: 1;min-width: 180px; min-height:140px"><img style="min-height:140px!important;" src="./images/trabajos-6.png" alt="">
                     <div class="overlay">
                         <span><b style="font-weight: bolder; color: #E86C00">UIGLP</b><br>Diseño Web</span>
                     </div>
@@ -192,7 +192,7 @@
         </div>
 
     </div>
-    <div class="contenedor" id="clientes" style="background-color: white">
+    <div class="contenedor" id="clientes" style="background-color: white" emit-menu>
         <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
             <div class="rectangulo-titulo animated pulse2"></div>
             <span class="titulo-seccion"  ac-animate animation-in="flex-servicios-animate" style="color: black">Nuestros<br>Clientes.</span>
@@ -225,7 +225,7 @@
     </div>
 
 </div>
-<div class="contenedor" id="equipo" style="position: relative; overflow: hidden">
+<div class="contenedor" id="equipo" style="position: relative; overflow: hidden" emit-menu>
     <div style="max-width: 850px; min-height: 150px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
         <video poster="./images/poster.png" style="position: absolute;left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
             <source src="./images/file.mp4" type="video/webm"></source>
@@ -258,7 +258,7 @@
         </div>
     </div>
 </div>
-<div class="contenedor" id="startups" style="background-color: #3D9BE9">
+<div class="contenedor" id="startups" style="background-color: #3D9BE9" emit-menu>
     <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
         <div class="rectangulo-titulo animated pulse"></div>
         <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: #FBE083; text-transform: none">Aceleradora de Startups.</span>
@@ -295,7 +295,7 @@
         </div>
     </div>
 </div>
-<div class="contenedor rojo-claro contacto" id="contacto" style="position: relative; overflow: hidden">
+<div class="contenedor rojo-claro contacto" id="contacto" style="position: relative; overflow: hidden" emit-menu>
     <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; display: flex; flex-wrap: wrap">
     <video poster="./images/poster.png" style="position: absolute; left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
         <source src="./images/file.mp4" type="video/webm"></source>
