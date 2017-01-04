@@ -22,6 +22,7 @@ AppController.$inject = ['$location', '$timeout', '$document'];
 function AppController($location, $timeout, $document) {
 
   var vm = this;
+  vm.hideLoader = true;
   vm.goToAnchor = goToAnchor;
 
   function goToAnchor(id) {

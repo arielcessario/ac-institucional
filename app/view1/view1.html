@@ -303,24 +303,24 @@
     <div form-id="form-contacto" class="cuadrado" style="display: flex; flex-direction: column; position: relative">
         <div class="rectangulo-titulo animated pulse2" ></div>
         <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black">CONTACTO</span>
-        <div class="controls">
-            <label>Escribe tu nombre:</label>
-            <input ac-validator is-required="Debe ingresar un nombre" type="text"
+        <div style="height: 88px" class="controls">
+            <label >Escribe tu nombre:</label>
+            <input ac-validator is-required="* Debe ingresar un nombre" type="text"
                    class="form-control" ng-model="contactoCtrl.nombre" id="contacto-nombre" >
         </div>
-        <div class="controls controls-margin">
+        <div style="height: 88px" class="controls controls-margin">
             <label>E-mail:</label>
-            <input ac-validator is-mail="El mail es incorrecto" type="email"
-                   class="form-control"  ng-model="contactoCtrl.email" id="contacto-mail">
+            <input ac-validator is-mail="* El mail es incorrecto" type="email"
+                   class="form-control" ng-model="contactoCtrl.email" id="contacto-mail">
         </div>
-        <div class="controls controls-margin">
+        <div style="height: 88px" class="controls controls-margin">
             <label>Asunto:</label>
-            <input ac-validator is-required="Debe ingresar un tema de consulta" type="text"
+            <input ac-validator is-required="* Debe ingresar un tema de consulta" type="text"
                    class="form-control" ng-model="contactoCtrl.asunto" id="contacto-asunto">
         </div>
-        <div class="controls controls-margin">
+        <div style="height: 88px" class="controls controls-margin">
             <label>Consulta:</label>
-                        <textarea ac-validator is-required="Debe ingresar una consulta" ng-model="contactoCtrl.mensaje"
+                        <textarea ac-validator is-required="* Debe ingresar una consulta" ng-model="contactoCtrl.mensaje"
                                   class="form-control" name="" id="contacto-consulta" rows="10" style="height: 60px;"></textarea>
         </div>
         <button id="contacto-enviar-mobile" ac-validator ng-click="contactoCtrl.sendMail();">Enviar</button>
