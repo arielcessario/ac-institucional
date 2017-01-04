@@ -92,15 +92,15 @@
                     $script([
                         'bower_components/angular-route/angular-route.min.js',
                         'bower_components/angular-scroll/angular-scroll.min.js',
-                        'ac-angular-utils/ac-utils.js',
+                        'ac-angular-utils/ac-utils.min.js',
                         'ac-angular-contacts/ac-contacts.min.js',
                         'ac-angular-animate/ac-animate.min.js',
-                        'view1/view1.js'
+                        'view1/view1.min.js'
                     ], 'segundo');
 
 
                     $script.ready('segundo', function () {
-                        $script(['app.js'], 'tercero');
+                        $script(['app.min.js'], 'tercero');
 
                         $script.ready('tercero', function () {
                             angular.bootstrap(document, ['myApp']);
