@@ -106,7 +106,7 @@ function emitMenu($document, $rootScope) {
                 var bottom_adentro = false;
 
 
-                $scope.correctionOut = ($scope.correctionOut == undefined) ? 0 : $scope.correctionOut;
+                $scope.correctionOut = 300;
                 $scope.correctionIn = ($scope.correctionIn == undefined) ? 0 : $scope.correctionIn;
 
                 var val = rect.top >= (0 - $scope.correctionIn) &&
