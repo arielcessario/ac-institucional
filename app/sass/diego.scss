@@ -140,7 +140,11 @@ body{
   background-color: rgba(0,0,0,.3);
   padding: 5px;
   z-index: 10000;
-
+  -webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInLeft 2s; /* Firefox < 16 */
+  -ms-animation: fadeInLeft 2s; /* Internet Explorer */
+  -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
+  animation: fadeInLeft 2s;
   @media (max-width: 800px){
     display: none!important;
   }
@@ -154,7 +158,7 @@ body{
 
 .seccion-lado:hover{
   cursor: pointer;
-  color: #E86C00;
+  color: #BCB658;
 }
 
 .menu-principal{
@@ -370,7 +374,6 @@ body{
 
 .contenedor-nosotros:hover .overlay{
   opacity:1;
-  cursor: pointer;
 }
 
 .contenedor-trabajos{
@@ -380,7 +383,6 @@ body{
 
 .contenedor-trabajos:hover .overlay{
   opacity:1;
-  cursor: pointer;
 }
 
 .flex-servicios-animate{
