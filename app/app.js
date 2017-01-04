@@ -7,6 +7,7 @@ angular.module('myApp', [
   'myApp.view1',
   'myApp.view2',
   'myApp.version',
+  'acUtils',
   'acAnimate',
   'acContacts'
 ]).
@@ -22,7 +23,6 @@ function AppController($location, $timeout, $document) {
 
   var vm = this;
   vm.goToAnchor = goToAnchor;
-
 
   function goToAnchor(id) {
     $location.path('/main');
