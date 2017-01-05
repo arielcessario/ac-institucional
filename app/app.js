@@ -24,20 +24,25 @@ angular.module('myApp', [
     .controller('AppController', AppController)
     .directive('emitMenu', emitMenu);
 
-AppController.$inject = ['$location', '$timeout', '$document', '$rootScope', '$scope'];
-function AppController($location, $timeout, $document, $rootScope, $scope) {
+AppController.$inject = ['$location', '$timeout', '$document', '$rootScope', '$scope', 'ContactsService'];
+function AppController($location, $timeout, $document, $rootScope, $scope, ContactsService) {
 
     var vm = this;
     vm.hideLoader = true;
     vm.goToAnchor = goToAnchor;
     vm.selected = 'home';
+    vm.sendMail = sendMail;
+vm.enviando = false;
+    vm.mail = '';
+    vm.nombre = '';
+    vm.asunto = '';
+    vm.mensaje = '';
 
-    $rootScope.$on("emit-menu", function(event, args){
+    $rootScope.$on("emit-menu", function (event, args) {
         vm.selected = args.nombre;
         if (!$scope.$$phase && !$scope.$root.$$phase)
             $scope.$apply();
     });
-
 
 
     function goToAnchor(id) {
@@ -56,7 +61,20 @@ function AppController($location, $timeout, $document, $rootScope, $scope) {
 
     function sendMail() {
 
-
+        vm.enviando = true;
+        ContactsService.sendMail(vm.mail,
+            [{mail: 'ventas@ac-desarrollos.com'}],
+            vm.nombre,
+            vm.asunto,
+            vm.mensaje,
+            function (data) {
+                vm.enviando = false;
+                vm.mail = '';
+                vm.nombre = '';
+                vm.asunto = '';
+                vm.mensaje = '';
+                console.log(data);
+            });
     }
 
 }

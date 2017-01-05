@@ -15,7 +15,7 @@ function sendMail($mail_origen, $mails_destino, $nombre, $mensaje, $asunto)
     $mail->Host = 'gator4184.hostgator.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'ventas@ac-desarrollos.com';                 // SMTP username
-    $mail->Password = 'ventas';                           // SMTP password
+    $mail->Password = 'ventas0_*020ventas';                           // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;
     $mail->CharSet = 'UTF-8';

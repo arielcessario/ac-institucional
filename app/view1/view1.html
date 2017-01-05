@@ -307,29 +307,29 @@
         <div style="height: 88px" class="controls">
             <label >Escribe tu nombre:</label>
             <input ac-validator is-required="* Debe ingresar un nombre" type="text"
-                   class="form-control" ng-model="contactoCtrl.nombre" id="contacto-nombre" >
+                   class="form-control" ng-model="appCtrl.nombre" id="contacto-nombre" >
         </div>
         <div style="height: 88px" class="controls controls-margin">
             <label>E-mail:</label>
             <input ac-validator is-mail="* El mail es incorrecto" type="email"
-                   class="form-control" ng-model="contactoCtrl.email" id="contacto-mail">
+                   class="form-control" ng-model="appCtrl.mail" id="contacto-mail">
         </div>
         <div style="height: 88px" class="controls controls-margin">
             <label>Asunto:</label>
             <input ac-validator is-required="* Debe ingresar un tema de consulta" type="text"
-                   class="form-control" ng-model="contactoCtrl.asunto" id="contacto-asunto">
+                   class="form-control" ng-model="appCtrl.asunto" id="contacto-asunto">
         </div>
         <div style="height: 88px" class="controls controls-margin">
             <label>Consulta:</label>
-                        <textarea ac-validator is-required="* Debe ingresar una consulta" ng-model="contactoCtrl.mensaje"
+                        <textarea ac-validator is-required="* Debe ingresar una consulta" ng-model="appCtrl.mensaje"
                                   class="form-control" name="" id="contacto-consulta" rows="10" style="height: 60px;"></textarea>
         </div>
-        <button id="contacto-enviar-mobile" ac-validator ng-click="contactoCtrl.sendMail();">Enviar</button>
+        <button id="contacto-enviar-mobile" ac-validator ng-click="appCtrl.sendMail();">Enviar</button>
     </div>
     <div class="cuadrado" style="display: flex; position: relative; flex-direction: column; margin-top: 150px">
         <h1 style="color: black; font-size: 18px">No aguantamos más las ganas de que nos escribas!</h1>
         <h2 style="font-size: 14px">El equipo <b>AC</b>Desarrollos <br>
-            <b>info@ac-desarrollos.com</b></h2>
+            <b>ventas@ac-desarrollos.com</b></h2>
     </div>
 </div>
 </div>
