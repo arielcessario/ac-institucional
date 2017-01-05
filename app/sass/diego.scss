@@ -40,7 +40,7 @@ body{
 }
 
 .contenedor-principal{
-  min-width: 350px;
+  min-width: 320px;
   text-align: center;
 }
 
@@ -236,7 +236,7 @@ body{
   min-width: 300px;
   margin: 10px auto;
   input, textarea{
-    width: 100%;
+    width: 96%;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 14px;
@@ -342,6 +342,7 @@ body{
 .contenedor-flex img{
   overflow: hidden;
   width: 100%;
+  margin: auto;
 }
 
 .contenedor-nosotros{
@@ -427,6 +428,15 @@ body{
 #clientes .parrafo-seccion{
   @media (max-width: 800px){
     font-size: 13px!important;
+  }
+}
+
+.marca{
+  @media (max-width: 500px){
+    width: 300px!important;
+    height: 300px!important;
+    margin: auto;
+
   }
 }
 
