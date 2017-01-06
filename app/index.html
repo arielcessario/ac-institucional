@@ -113,7 +113,20 @@
         );
     </script>
     <title>Ac Desarrollos</title>
-    <link rel="stylesheet" href="stylesheets/diego.css">
+    <!--<link rel="stylesheet" href="stylesheets/diego.css">-->
+    <script>
+        var cb = function () {
+            var l = document.createElement('link');
+            l.rel = 'stylesheet';
+            l.href = 'stylesheets/diego.css';
+            var h = document.getElementsByTagName('head')[0];
+            h.parentNode.insertBefore(l, h);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(cb);
+        else window.addEventListener('load', cb);
+    </script>
     <style>
         .loader {
             animation: load 1s linear infinite;
