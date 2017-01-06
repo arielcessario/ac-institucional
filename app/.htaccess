@@ -24,3 +24,9 @@ ExpiresDefault "access plus 1 week"
     Header append Vary: Accept-Encoding
   </FilesMatch>
 </IfModule>
+
+<IfModule mod_deflate.c>
+    <filesMatch "\.(js|css|html|php)$">
+        SetOutputFilter DEFLATE
+    </filesMatch>
+</IfModule>
