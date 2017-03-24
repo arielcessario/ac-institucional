@@ -58,6 +58,12 @@
   100% {transform: scale(1);background-color:#FFFFFF;}
 }
 
+@keyframes pulse3 {
+  0% {transform: scale(1); background-color: #ffffff;}
+  50% {transform: scale(1.1);background-color: #A1CCA5;}
+  100% {transform: scale(1);background-color:#FFFFFF;}
+}
+
 
 body{
   font-family: 'Raleway', sans-serif;
@@ -281,7 +287,6 @@ body{
   display: block!important;
 }
 .logo{
-  height: 400px;
   margin: auto;
   color: white;
   img{
@@ -318,7 +323,7 @@ body{
 }
 
 .cuadrado{
-  color: #FBE083;
+  color: black;
   flex: 1;
   margin: 5px auto;
   input, textarea{
@@ -336,7 +341,7 @@ body{
   }
   label{
     font-family: 'Raleway', sans-serif;
-    color: #FBE083;
+    color: black;
     font-weight: lighter;
 
   }
@@ -398,25 +403,40 @@ body{
   background-color: #BCB658!important;
 }
 
+.rectangulo-vender{
+  width: 40px;
+  height: 10px;
+  margin-bottom: 10px;
+  background-color: #BCB658;
+
+}
+
 .titulo-seccion{
-  font-size: 68px;
+  font-size: 60px;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   line-height: 60px;
   margin-top: 10px;
   margin-bottom: 10px;
   @media (max-width: 500px){
-    font-size: 40px;
+    font-size: 33px;
     line-height: 32px;
   }
 }
 
+
+.contenedor-secundario{
+
+  @media (max-width: 800px){
+    min-height: 500px!important;
+  }
+}
 .parrafo-seccion{
   color: black;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   font-family: 'Raleway', sans-serif;
 
 
@@ -629,11 +649,7 @@ body{
   animation-iteration-count: infinite;
 }
 
-#clientes .parrafo-seccion{
-  @media (max-width: 800px){
-    font-size: 13px!important;
-  }
-}
+
 
 .flex-trabajos{
   @media (max-width: 600px){
@@ -661,3 +677,14 @@ body{
 
 }
 
+#mision2, #mision{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+  background: #45484d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+
+
+}
