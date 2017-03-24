@@ -22,6 +22,19 @@
   }
 }
 
+@keyframes fadeFromBottom {
+  0% {
+    opacity: 0;
+    bottom: 0;
+
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+
+  }
+}
+
 
 @keyframes fadeIn {
   0% {
@@ -73,25 +86,65 @@ body{
   }
 
 .menu2 svg{
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
 
-  @media (max-width: 800px){
+    @media (max-width: 800px){
     display: none;
 }
 }
 
-.menu2 svg:hover{
+.menu2 svg:hover, .menu-contacto svg:hover{
   cursor: pointer;
   transform: scale(1.3 , 1.3);
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
+
   polygon{
-    fill: #A1CCA5!important;
+    fill: #FBE083!important;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
   }
+  path{
+    fill: lightgrey!important;
+  }
 }
+
+
+
+
+.menu-contacto{
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  background-color:rgba(15,35,45,.6);
+  color: white;
+  margin: auto;
+  z-index: 10000;
+  position: fixed;
+  bottom: 0;
+  h1{
+    margin: auto;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 5px;
+          }
+
+  svg{
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    path{
+    fill: #FBE083;
+
+ }
+    polygon{
+      fill: lightgrey;
+    }
+  }
+}
+
+
+
+
+
 
 .menu-mobile-item{
   font-size: 22px;
@@ -535,6 +588,14 @@ body{
   -ms-animation: fadeInTop 2s; /* Internet Explorer */
   -o-animation: fadeInTop 2s; /* Opera < 12.1 */
   animation: fadeInTop 2s;
+}
+
+.flex-contacto-animate{
+  -webkit-animation: fadeFromBottom 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeFromBottom 2s; /* Firefox < 16 */
+  -ms-animation: fadeFromBottom 2s; /* Internet Explorer */
+  -o-animation: fadeFromBotton 2s; /* Opera < 12.1 */
+  animation: fadeFromBottom 2s;
 }
 
 

@@ -56,43 +56,6 @@
         </div>
     </div>
 
-<div class="contenedor rojo-claro contacto" id="contacto" style="position: relative; background: #72444f; /* Old browsers */background: -moz-linear-gradient(top,  #72444f 0%, #50232e 49%, #773441 100%); /* FF3.6-15 */background: -webkit-linear-gradient(top,  #72444f 0%,#50232e 49%,#773441 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #72444f 0%,#50232e 49%,#773441 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72444f', endColorstr='#773441',GradientType=0 ); /* IE6-9 */overflow: hidden" emit-menu>
-
-    <div style="max-width: 850px;width: 100%; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; display: flex; flex-wrap: wrap">
-               <div form-id="form-contacto" class="cuadrado" style="display: flex; flex-direction: column; position: relative">
-            <div class="rectangulo-titulo animated pulse2" ></div>
-            <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: #FBE083">CONTACTO</span>
-            <div style="height: 65px" class="controls">
-                <label >Escribe tu nombre:</label>
-                <input ac-validator is-required="* Debe ingresar un nombre" type="text"
-                       class="form-control" ng-model="appCtrl.nombre" id="contacto-nombre" >
-            </div>
-            <div style="height: 65px" class="controls controls-margin">
-                <label>E-mail:</label>
-                <input ac-validator is-mail="* El mail es incorrecto" type="email"
-                       class="form-control" ng-model="appCtrl.mail" id="contacto-mail">
-            </div>
-            <div style="height:65px" class="controls controls-margin">
-                <label>Asunto:</label>
-                <input ac-validator is-required="* Debe ingresar un tema de consulta" type="text"
-                       class="form-control" ng-model="appCtrl.asunto" id="contacto-asunto">
-            </div>
-            <div style="height: 65px" class="controls controls-margin">
-                <label>Consulta:</label>
-                        <textarea ac-validator is-required="* Debe ingresar una consulta" ng-model="appCtrl.mensaje"
-                                  class="form-control" name="" id="contacto-consulta" rows="10" style="height: 60px;"></textarea>
-            </div>
-            <button id="contacto-enviar-mobile" ac-validator ng-click="appCtrl.sendMail();">Enviar</button>
-        </div>
-        <div class="cuadrado  media" style="display: flex; position: relative; flex-direction: column; margin-top: 150px; margin-left: 15px">
-            <h1 style="color: black; font-size: 18px">No aguantamos más las ganas de que nos escribas!</h1>
-            <h2 style="font-size: 14px">El equipo <b>AC</b>Desarrollos <br>
-                <b>ventas@ac-desarrollos.com</b></h2>
-        </div>
-    </div>
-    </div>
-
 
     <div class="contenedor" id="servicios" style="background-color: black" emit-menu>
         <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
@@ -300,39 +263,6 @@ background: linear-gradient(to bottom,  #72444f 0%,#50232e 49%,#773441 100%); /*
     </div>
 
 </div>
-<div class="contenedor" id="equipo" style="position: relative; overflow: hidden" emit-menu>
-    <div style="max-width: 850px; min-height: 150px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
-        <video poster="./images/poster.png" style="position: absolute;left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
-            <source src="./images/file.mp4" type="video/webm"></source>
-        </video>
-        <div class="rectangulo-titulo" style="position: absolute"></div>
-        <span class="titulo-seccion" style="color: black; position: absolute">Nuestro <br> Equipo.</span>
-        <p class="parrafo-seccion" ac-animate animation-in="flex-servicios-animate" style="font-weight: bolder; color:white; font-size: 24px;top: 128px; position: absolute">A TUS ORDENES</p>
-    </div>
-    <div class="contenedor-flex" style="flex-direction: row; display: flex; flex-wrap:wrap; width: 100%">
-        <div style="display:flex; flex-wrap:wrap; flex-direction: row; width: 100%">
-            <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-diego.png" alt="">
-                <div class="overlay">
-                    <span><b style="font-weight: bolder; color: #E86C00">DIEGO YANKELEVICH</b><br>Diseñador Multimedia</span></div>
-            </div>
-            <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-pela.gif" alt="">
-                <div class="overlay">
-                    <span><b style="font-weight: bolder; color: #E86C00">ARIEL CESSARIO</b><br>Programador Senior</span>
-                </div>
-            </div>
-            <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-matata.gif" alt="">
-                <div class="overlay">
-                    <span><b style="font-weight: bolder; color: #E86C00">MATEO MANEFF</b><br>Programador Senior</span>
-                </div>
-            </div>
-            <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-julito.gif" alt="">
-                <div class="overlay">
-                    <span><b style="font-weight: bolder; color: #E86C00">JULIO LAVAGGI</b><br>Analista de sistemas</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="contenedor" id="startups" style="background-color: #3D9BE9" emit-menu>
     <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
         <div class="rectangulo-titulo animated pulse"></div>
@@ -370,6 +300,83 @@ background: linear-gradient(to bottom,  #72444f 0%,#50232e 49%,#773441 100%); /*
         </div>
     </div>
 </div>
+</div>
+<div class="contenedor" id="equipo" style="position: relative; overflow: hidden" emit-menu>
+    <div style="max-width: 850px; min-height: 150px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
+        <video poster="./images/poster.png" style="position: absolute;left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
+            <source src="./images/file.mp4" type="video/webm"></source>
+        </video>
+        <div class="rectangulo-titulo" style="position: absolute"></div>
+        <span class="titulo-seccion" style="color: black; position: absolute">Nuestro <br> Equipo.</span>
+        <p class="parrafo-seccion" ac-animate animation-in="flex-servicios-animate" style="font-weight: bolder; color:white; font-size: 24px;top: 128px; position: absolute">A TUS ORDENES</p>
+    </div>
+    <div class="contenedor-flex" style="flex-direction: row; display: flex; flex-wrap:wrap; width: 100%">
+        <div style="display:flex; flex-wrap:wrap; flex-direction: row; width: 100%">
+            <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-diego.png" alt="">
+                <div class="overlay">
+                    <span><b style="font-weight: bolder; color: #E86C00">DIEGO YANKELEVICH</b><br>Diseñador Multimedia</span></div>
+            </div>
+            <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-pela.gif" alt="">
+                <div class="overlay">
+                    <span><b style="font-weight: bolder; color: #E86C00">ARIEL CESSARIO</b><br>Programador Senior</span>
+                </div>
+            </div>
+            <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-matata.gif" alt="">
+                <div class="overlay">
+                    <span><b style="font-weight: bolder; color: #E86C00">MATEO MANEFF</b><br>Programador Senior</span>
+                </div>
+            </div>
+            <div class="contenedor-nosotros" style="flex: 1;min-width: 150px; min-height: 150px"><img src="./images/foto-julito.gif" alt="">
+                <div class="overlay">
+                    <span><b style="font-weight: bolder; color: #E86C00">JULIO LAVAGGI</b><br>Analista de sistemas</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contenedor rojo-claro contacto" id="contacto" style="position: relative; background: #72444f; /* Old browsers */background: -moz-linear-gradient(top,  #72444f 0%, #50232e 49%, #773441 100%); /* FF3.6-15 */background: -webkit-linear-gradient(top,  #72444f 0%,#50232e 49%,#773441 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #72444f 0%,#50232e 49%,#773441 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72444f', endColorstr='#773441',GradientType=0 ); /* IE6-9 */overflow: hidden" emit-menu>
+
+    <div style="max-width: 850px;width: 100%; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; display: flex; flex-wrap: wrap">
+        <div form-id="form-contacto" class="cuadrado" style="display: flex; flex-direction: column; position: relative">
+            <div class="rectangulo-titulo animated pulse2" ></div>
+            <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: #FBE083">CONTACTO</span>
+            <div style="height: 65px" class="controls">
+                <label >Escribe tu nombre:</label>
+                <input ac-validator is-required="* Debe ingresar un nombre" type="text"
+                       class="form-control" ng-model="appCtrl.nombre" id="contacto-nombre" >
+            </div>
+            <div style="height: 65px" class="controls controls-margin">
+                <label>E-mail:</label>
+                <input ac-validator is-mail="* El mail es incorrecto" type="email"
+                       class="form-control" ng-model="appCtrl.mail" id="contacto-mail">
+            </div>
+            <div style="height:65px" class="controls controls-margin">
+                <label>Asunto:</label>
+                <input ac-validator is-required="* Debe ingresar un tema de consulta" type="text"
+                       class="form-control" ng-model="appCtrl.asunto" id="contacto-asunto">
+            </div>
+            <div style="height: 65px" class="controls controls-margin">
+                <label>Consulta:</label>
+                        <textarea ac-validator is-required="* Debe ingresar una consulta" ng-model="appCtrl.mensaje"
+                                  class="form-control" name="" id="contacto-consulta" rows="10" style="height: 60px;"></textarea>
+            </div>
+            <button id="contacto-enviar-mobile" ac-validator ng-click="appCtrl.sendMail();">Enviar</button>
+        </div>
+        <div class="cuadrado  media" style="display: flex; position: relative; flex-direction: column; margin-top: 150px; margin-left: 15px">
+            <h1 style="color: black; font-size: 18px">No aguantamos más las ganas de que nos escribas!</h1>
+            <h2 style="font-size: 14px">El equipo <b>AC</b>Desarrollos <br>
+                <b>ventas@ac-desarrollos.com</b></h2>
+        </div>
+    </div>
+</div>
+<div class="menu-contacto">
+    <svg ng-class="{'menu-selected':appCtrl.selected=='contacto'}" ng-click="appCtrl.goToAnchor('contacto')" style="height: 38px; margin-top: -30px;" height="64" version="1.1" width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><desc>Created with Snap</desc><defs></defs><g>
+        <path fill="#fff" d="M61.693118,24.434001C61.693118,24.434001,2.3068820000000017,24.434001,2.3068820000000017,24.434001C2.3068820000000017,24.434001,31.999406,44.331985,31.999406,44.331985C31.999406,44.331985,61.693118,24.434001,61.693118,24.434001"></path>
+        <polygon fill="#fff" points="50,61.447 99.998,27.447 99.998,83 0,83 0,27.447 " transform="matrix(0.59386236,0,0,0.59386236,2.306882,10.338341)"></polygon>
+    </g></svg>
+    <h1>Estamos esperando tu mensaje!</h1>
 </div>
 <div class="contenedor" style="background-color: black; min-height: 100px"></div>
 </div>
