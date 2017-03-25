@@ -9,12 +9,11 @@
             </div>
             <div style="margin: auto; text-align: center; display: flex">
             <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='home'}" ng-click="appCtrl.goToAnchor('home')">HOME</div>
+            <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='clientes'}" ng-click="appCtrl.goToAnchor('mision2')">RESULTADOS</div>
             <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='servicios'}" ng-click="appCtrl.goToAnchor('servicios')">SERVICIOS</div>
+                <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='work'}" ng-click="appCtrl.goToAnchor('work')">WORK</div>
             <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='mision'}" ng-click="appCtrl.goToAnchor('mision')">NOSOTROS</div>
-            <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='work'}" ng-click="appCtrl.goToAnchor('work')">WORK</div>
-            <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='clientes'}" ng-click="appCtrl.goToAnchor('clientes')">RESULTADOS</div>
             <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='equipo'}" ng-click="appCtrl.goToAnchor('equipo')">EQUIPO</div>
-            <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='startups'}" ng-click="appCtrl.goToAnchor('startups')">STARTUPS</div>
             <div ng-class="{'menu-selected':appCtrl.selected=='contacto'}" ng-click="appCtrl.goToAnchor('contacto')"><svg style="height: 38px; margin-top: -7px;" height="64" version="1.1" width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><desc>Created with Snap</desc><defs></defs><g>
                 <path fill="#fff" d="M61.693118,24.434001C61.693118,24.434001,2.3068820000000017,24.434001,2.3068820000000017,24.434001C2.3068820000000017,24.434001,31.999406,44.331985,31.999406,44.331985C31.999406,44.331985,61.693118,24.434001,61.693118,24.434001"></path>
                 <polygon fill="#fff" points="50,61.447 99.998,27.447 99.998,83 0,83 0,27.447 " transform="matrix(0.59386236,0,0,0.59386236,2.306882,10.338341)"></polygon>
@@ -24,25 +23,25 @@
 
         <div class="menu-mobile" ng-class="{'menu-open':appCtrl.menu}" style="margin: auto; text-align: center;">
             <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='home'}" ng-click="appCtrl.goToAnchor('home');appCtrl.menu=!appCtrl.menu;">HOME</div>
+            <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='clientes'}" ng-click="appCtrl.goToAnchor('mision2');appCtrl.menu=!appCtrl.menu;">RESULTADOS</div>
             <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='servicios'}" ng-click="appCtrl.goToAnchor('servicios');appCtrl.menu=!appCtrl.menu;">SERVICIOS</div>
-            <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='mision'}" ng-click="appCtrl.goToAnchor('mision');appCtrl.menu=!appCtrl.menu;">NOSOTROS</div>
-            <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='work'}" ng-click="appCtrl.goToAnchor('work');appCtrl.menu=!appCtrl.menu;">WORK</div>
-            <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='clientes'}" ng-click="appCtrl.goToAnchor('clientes');appCtrl.menu=!appCtrl.menu;">RESULTADOS</div>
-            <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='equipo'}" ng-click="appCtrl.goToAnchor('equipo');appCtrl.menu=!appCtrl.menu;">EQUIPO</div>
-            <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='startups'}" ng-click="appCtrl.goToAnchor('startups');appCtrl.menu=!appCtrl.menu;">STARTUPS</div>
             <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='contacto'}" ng-click="appCtrl.goToAnchor('contacto');appCtrl.menu=!appCtrl.menu;">CONTACTO</div>
+            <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='work'}" ng-click="appCtrl.goToAnchor('work');appCtrl.menu=!appCtrl.menu;">WORK</div>
+            <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='mision'}" ng-click="appCtrl.goToAnchor('mision');appCtrl.menu=!appCtrl.menu;">NOSOTROS</div>
+            <div class="menu-mobile-item" ng-class="{'menu-selected':appCtrl.selected=='equipo'}" ng-click="appCtrl.goToAnchor('equipo');appCtrl.menu=!appCtrl.menu;">EQUIPO</div>
+
         </div>
 
            <div class="menu-lado" style="position: fixed; display: flex">
             <div style="margin: auto; text-align: left; display: flex; flex-direction: column">
                 <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='home'}" ng-click="appCtrl.goToAnchor('home')">HOME</div>
+                <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='clientes'}" ng-click="appCtrl.goToAnchor('mision2')">RESULTADOS</div>
                 <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='servicios'}" ng-click="appCtrl.goToAnchor('servicios')">SERVICIOS</div>
-                <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='mision'}" ng-click="appCtrl.goToAnchor('mision')">NOSOTROS</div>
-                <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='work'}" ng-click="appCtrl.goToAnchor('work')">WORK</div>
-                <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='clientes'}" ng-click="appCtrl.goToAnchor('clientes')">RESULTADOS</div>
-                <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='equipo'}" ng-click="appCtrl.goToAnchor('equipo')">EQUIPO</div>
-                <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='startups'}" ng-click="appCtrl.goToAnchor('startups')">STARTUPS</div>
                 <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='contacto'}" ng-click="appCtrl.goToAnchor('contacto')">CONTACTO</div>
+                <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='work'}" ng-click="appCtrl.goToAnchor('work')">WORK</div>
+                <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='mision'}" ng-click="appCtrl.goToAnchor('mision')">NOSOTROS</div>
+                                <div class="seccion-lado" ng-class="{'menu-selected':appCtrl.selected=='equipo'}" ng-click="appCtrl.goToAnchor('equipo')">EQUIPO</div>
+
             </div>
         </div>
 
@@ -88,7 +87,7 @@
     </div>
 </div>
 
-<div class="contenedor" id="clientes" style="background-color: white" emit-menu>
+<div class="contenedor"  style="background-color: white" emit-menu>
     <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom:20px; padding-left: 10px; padding-right: 10px">
         <div class="rectangulo-titulo animated pulse2"></div>
         <span class="titulo-seccion"  ac-animate animation-in="flex-servicios-animate" style="color: black">Te garantizamos resultados:<em style="color: #E86C00">Como?</em></span>
@@ -120,13 +119,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
                 proyecto.<br>
                 Analizamos el perfil de cada cliente, el público al que apunta y las necesidades de comunicación. <br>
                 Optimizamos cada Sitio para buscadores, logrando diseños veloces y efectivos que convierten visitantes
-                en clientes.<br><br>
-                <span style="color: #50232E; font-size: 20px; margin-top: 5px; margin-bottom: 5px; font-weight: bolder">Tenes una idea y no sabes cómo desarrollarla?</span><br>
-                Impulsamos y damos asesoramientos a Startups, mediante programas de subsidios promocionados por el Banco
-                Interamericano de desarrollo. Actualmente trabajamos con las lineas que tienen mayor convocatoria y
-                casos de éxito, tales como <b>PAC Empresas, PAC Emprendedores, FONTSOFT, FONTAR</b>. Para proyectos que
-                necesitan ser asesorados por Incubadoras, somos una subsidiaria en Capital Federal de la Cooperativa
-                IDeAAr.</p>
+                en clientes.</p>
             <div class="contenedor-flex" style="display: flex; flex-wrap: wrap; justify-content: center">
                 <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                     <div class="rectangulo-servicios"></div>
@@ -167,6 +160,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
             </div>
         </div>
     </div>
+
+<div class="contenedor rojo-claro contacto" id="contacto" style="position: relative; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8baf8d+0,a1cca5+100 */
+background: #8baf8d; /* Old browsers */
+background: -moz-linear-gradient(top,  #8baf8d 0%, #a1cca5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #8baf8d 0%,#a1cca5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #8baf8d 0%,#a1cca5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8baf8d', endColorstr='#a1cca5',GradientType=0 ); /* IE6-9 */
+overflow: hidden" emit-menu>
+
+    <div style="max-width: 850px;width: 100%; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; display: flex; flex-wrap: wrap">
+        <div form-id="form-contacto" class="cuadrado" style="display: flex; flex-direction: column; position: relative">
+            <div class="rectangulo-titulo animated pulse2" ></div>
+            <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black">CONTACTO</span>
+            <div style="height: 65px" class="controls">
+                <label >Escribe tu nombre:</label>
+                <input ac-validator is-required="* Debe ingresar un nombre" type="text"
+                       class="form-control" ng-model="appCtrl.nombre" id="contacto-nombre" >
+            </div>
+            <div style="height: 65px" class="controls controls-margin">
+                <label>E-mail:</label>
+                <input ac-validator is-mail="* El mail es incorrecto" type="email"
+                       class="form-control" ng-model="appCtrl.mail" id="contacto-mail">
+            </div>
+            <div style="height:65px" class="controls controls-margin">
+                <label>Asunto:</label>
+                <input ac-validator is-required="* Debe ingresar un tema de consulta" type="text"
+                       class="form-control" ng-model="appCtrl.asunto" id="contacto-asunto">
+            </div>
+            <div style="height: 65px" class="controls controls-margin">
+                <label>Consulta:</label>
+                        <textarea ac-validator is-required="* Debe ingresar una consulta" ng-model="appCtrl.mensaje"
+                                  class="form-control" name="" id="contacto-consulta" rows="10" style="height: 60px;"></textarea>
+            </div>
+            <button id="contacto-enviar-mobile" ac-validator ng-click="appCtrl.sendMail();">Enviar</button>
+        </div>
+        <div class="cuadrado  media" style="display: flex; position: relative; flex-direction: column; margin-top: 150px; margin-left: 15px">
+            <h1 style="color: black; font-size: 18px">No dudes más, pedinos un presupuesto sin cargo:</h1>
+            <h2 style="font-size: 14px">El equipo <b>AC</b>Desarrollos <br>
+                <b>ventas@ac-desarrollos.com</b></h2>
+        </div>
+    </div>
+</div>
 
     <div class="contenedor" id="work" style="background-color: white;" emit-menu>
         <div style="max-width: 850px; margin: auto; padding-top: 50px; padding-bottom: 50px; padding-left: 10px; padding-right: 10px">
@@ -248,47 +283,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 
     </div>
 
-<div class="contenedor rojo-claro contacto" id="contacto" style="position: relative; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8baf8d+0,a1cca5+100 */
-background: #8baf8d; /* Old browsers */
-background: -moz-linear-gradient(top,  #8baf8d 0%, #a1cca5 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #8baf8d 0%,#a1cca5 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #8baf8d 0%,#a1cca5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8baf8d', endColorstr='#a1cca5',GradientType=0 ); /* IE6-9 */
-overflow: hidden" emit-menu>
-
-    <div style="max-width: 850px;width: 100%; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; display: flex; flex-wrap: wrap">
-        <div form-id="form-contacto" class="cuadrado" style="display: flex; flex-direction: column; position: relative">
-            <div class="rectangulo-titulo animated pulse2" ></div>
-            <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black">CONTACTO</span>
-            <div style="height: 65px" class="controls">
-                <label >Escribe tu nombre:</label>
-                <input ac-validator is-required="* Debe ingresar un nombre" type="text"
-                       class="form-control" ng-model="appCtrl.nombre" id="contacto-nombre" >
-            </div>
-            <div style="height: 65px" class="controls controls-margin">
-                <label>E-mail:</label>
-                <input ac-validator is-mail="* El mail es incorrecto" type="email"
-                       class="form-control" ng-model="appCtrl.mail" id="contacto-mail">
-            </div>
-            <div style="height:65px" class="controls controls-margin">
-                <label>Asunto:</label>
-                <input ac-validator is-required="* Debe ingresar un tema de consulta" type="text"
-                       class="form-control" ng-model="appCtrl.asunto" id="contacto-asunto">
-            </div>
-            <div style="height: 65px" class="controls controls-margin">
-                <label>Consulta:</label>
-                        <textarea ac-validator is-required="* Debe ingresar una consulta" ng-model="appCtrl.mensaje"
-                                  class="form-control" name="" id="contacto-consulta" rows="10" style="height: 60px;"></textarea>
-            </div>
-            <button id="contacto-enviar-mobile" ac-validator ng-click="appCtrl.sendMail();">Enviar</button>
-        </div>
-        <div class="cuadrado  media" style="display: flex; position: relative; flex-direction: column; margin-top: 150px; margin-left: 15px">
-            <h1 style="color: black; font-size: 18px">No dudes más, pedinos un presupuesto sin cargo:</h1>
-            <h2 style="font-size: 14px">El equipo <b>AC</b>Desarrollos <br>
-                <b>ventas@ac-desarrollos.com</b></h2>
-        </div>
-    </div>
-</div>
 <div class="contenedor" id="mision" style="position: relative; overflow: hidden" emit-menu>
        <div style="max-width: 850px; margin: auto; padding-top: 20px; position: relative; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
         <div class="rectangulo-titulo animated pulse3"></div>
@@ -311,53 +305,15 @@ overflow: hidden" emit-menu>
             En resumidas cuentas, nuestra misión es ayudar, queremos que en Argentina las cosas salgan, y ponemos todo
             de nuestra parte para que cada empresa en este país tenga servicios de máxima calidad a un precio justo.</p>
     </div>
-    <div class="contenedor" id="startups" style="background-color: #3D9BE9" emit-menu>
-        <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
-            <div class="rectangulo-titulo animated pulse"></div>
-            <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: #FBE083; text-transform: none">Aceleradora de Startups.</span>
-            <p class="parrafo-seccion" ac-animate animation-in="flex-trabajos-animate" style="color: white">Hace unos años nos dimos cuenta que podíamos hacer mucho más, no
-                solo ofrecer sistemas, Branding y servicios de diseño web, sino que también podíamos ayudar a nuevos
-                emprendedores a conseguir fondos para poder llevar a cabo sus sueños.
-                <br><br> Podemos decir que esto es algo que nos da gran satisfacción ya que como Incubadora pudimos ayudar a las
-                empresas a llevar a cabo sus emprendimientos, y gracias a estas interacciones positivas, nuestra red de
-                contacto ha crecido exponencialmente, dándonos la oportunidad de poder brindar soluciones a un amplio
-                espectro de compañías.</p>
-            <h1 class="parrafo-seccion"
-                style="color: #FBE083!important; font-size: 30px; line-height: 34px">Tenes un proyecto
-                que necesita financiamiento? consultanos!</h1>
-            <div class="contenedor-flex" style="flex-direction: row; display: flex; flex-wrap:wrap; width: 100%">
 
-                <div style="display:flex; flex-wrap:wrap; flex-direction: row; width: 100%">
-                    <div class="contenedor-estadisticas" ac-animate animation-in="flex-servicios-animate" style="flex: 1;min-width: 150px; min-height: 150px">
-                        <h1>56</h1>
-                        <h2>CLIENTES FELICES</h2>
-                    </div>
-                    <div class="contenedor-estadisticas" ac-animate animation-in="flex-servicios-animate" style="flex: 1;min-width: 150px; min-height: 150px">
-                        <h1>30</h1>
-                        <h2>SITIOS WEB EN LINEA</h2>
-                    </div>
-                    <div class="contenedor-estadisticas"  ac-animate animation-in="flex-servicios-animate" style="flex: 1;min-width: 150px; min-height: 150px">
-                        <h1>10</h1>
-                        <h2>CAMPANAS SOCIALES</h2>
-                    </div>
-                    <div class="contenedor-estadisticas"  ac-animate animation-in="flex-servicios-animate" style="flex: 1;min-width: 150px; min-height: 150px">
-                        <h1>2500</h1>
-                        <h2>TAZAS DE CAFE</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <div class="contenedor" id="equipo" style="position: relative; overflow: hidden" emit-menu>
+     <div class="contenedor" id="equipo" style="position: relative; overflow: hidden" emit-menu>
         <div style="max-width: 850px; min-height: 150px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
             <video poster="./images/poster.png" style="position: absolute;left: 0; top: 0;" preload="preload" id="video" autoplay="autoplay" loop="loop">
                 <source src="./images/file.mp4" type="video/webm"></source>
             </video>
             <div class="rectangulo-titulo" style="position: absolute"></div>
-            <span class="titulo-seccion" style="color: black; position: absolute">Nuestro <br> Equipo.</span>
-            <p class="parrafo-seccion" ac-animate animation-in="flex-servicios-animate" style="font-weight: bolder; color:white; font-size: 24px;top: 128px; position: absolute">A TUS ORDENES</p>
+            <span class="titulo-seccion" style="color: black; position: absolute">Nuestro Equipo.</span>
+            <p class="parrafo-seccion" ac-animate animation-in="flex-servicios-animate" style="font-weight: bolder; color:white; font-size: 24px;top: 66px; position: absolute">A TUS ORDENES</p>
         </div>
         <div class="contenedor-flex" style="flex-direction: row; display: flex; flex-wrap:wrap; width: 100%">
             <div style="display:flex; flex-wrap:wrap; flex-direction: row; width: 100%">
@@ -379,12 +335,39 @@ overflow: hidden" emit-menu>
             </div>
         </div>
     </div>
-<div class="menu-contacto">
+    <div class="contenedor-flex" style="flex-direction: row; display: flex; flex-wrap:wrap; width: 100%">
+
+        <div style="display:flex; flex-wrap:wrap; text-align:center; flex-direction: row; width: 100%;  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+  background: #45484d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */">
+            <div class="contenedor-estadisticas" ac-animate animation-in="flex-servicios-animate" style="flex: 1;min-width: 150px; min-height: 150px">
+                <h1>56</h1>
+                <h2>CLIENTES FELICES</h2>
+            </div>
+            <div class="contenedor-estadisticas" ac-animate animation-in="flex-servicios-animate" style="flex: 1;min-width: 150px; min-height: 150px">
+                <h1>30</h1>
+                <h2>SITIOS WEB EN LINEA</h2>
+            </div>
+            <div class="contenedor-estadisticas"  ac-animate animation-in="flex-servicios-animate" style="flex: 1;min-width: 150px; min-height: 150px">
+                <h1>10</h1>
+                <h2>CAMPANAS SOCIALES</h2>
+            </div>
+            <div class="contenedor-estadisticas"  ac-animate animation-in="flex-servicios-animate" style="flex: 1;min-width: 150px; min-height: 150px">
+                <h1>2500</h1>
+                <h2>TAZAS DE CAFE</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-contacto">
     <svg ng-class="{'menu-selected':appCtrl.selected=='contacto'}" ng-click="appCtrl.goToAnchor('contacto')" style="height: 38px; margin-top: -30px;" height="64" version="1.1" width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><desc>Created with Snap</desc><defs></defs><g>
         <path fill="#fff" d="M61.693118,24.434001C61.693118,24.434001,2.3068820000000017,24.434001,2.3068820000000017,24.434001C2.3068820000000017,24.434001,31.999406,44.331985,31.999406,44.331985C31.999406,44.331985,61.693118,24.434001,61.693118,24.434001"></path>
         <polygon fill="#fff" points="50,61.447 99.998,27.447 99.998,83 0,83 0,27.447 " transform="matrix(0.59386236,0,0,0.59386236,2.306882,10.338341)"></polygon>
     </g></svg>
-    <h1>Estamos esperando tu mensaje!</h1>
+    <h1>Pedinos presupuesto sin cargo!</h1>
 </div>
 <div class="contenedor" style="background-color: black; min-height: 100px"></div>
 </div>
