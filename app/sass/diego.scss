@@ -229,19 +229,28 @@ body{
 .menu-lado{
   font-size: 12px;
   top: 45%;
-  right: 20px;
+  right: -200px;
  -webkit-border-radius: 5px;
   background-color: rgba(0,0,0,.3);
   padding: 5px;
   z-index: 10000;
-  -webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInLeft 2s; /* Firefox < 16 */
-  -ms-animation: fadeInLeft 2s; /* Internet Explorer */
-  -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
-  animation: fadeInLeft 2s;
+
   @media (max-width: 800px){
     display: none!important;
   }
+}
+
+.menu-lado-movida{
+  right: 20px !important;
+  //-webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
+  //-moz-animation: fadeInLeft 2s; /* Firefox < 16 */
+  //-ms-animation: fadeInLeft 2s; /* Internet Explorer */
+  //-o-animation: fadeInLeft 2s; /* Opera < 12.1 */
+  //animation: fadeInLeft 2s;
+}
+
+.menu-lado-movida-remove-active, .menu-lado-movida-add-active  {
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
 }
 
 .seccion-lado{

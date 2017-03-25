@@ -3,6 +3,7 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
     'ngRoute',
+    'ngAnimate',
     'duScroll',
     'myApp.view1',
     'acUtils',
@@ -24,19 +25,20 @@ angular.module('myApp', [
     .controller('AppController', AppController)
     .directive('emitMenu', emitMenu);
 
-AppController.$inject = ['$location', '$timeout', '$document', '$rootScope', '$scope', 'ContactsService'];
-function AppController($location, $timeout, $document, $rootScope, $scope, ContactsService) {
+AppController.$inject = ['$location', '$timeout', '$document', '$rootScope', '$scope', 'ContactsService', '$element'];
+function AppController($location, $timeout, $document, $rootScope, $scope, ContactsService, $element) {
 
     var vm = this;
     vm.hideLoader = true;
     vm.goToAnchor = goToAnchor;
     vm.selected = 'home';
     vm.sendMail = sendMail;
-vm.enviando = false;
+    vm.enviando = false;
     vm.mail = '';
     vm.nombre = '';
     vm.asunto = '';
     vm.mensaje = '';
+    vm.movida = false;
 
     $rootScope.$on("emit-menu", function (event, args) {
         vm.selected = args.nombre;
@@ -76,6 +78,13 @@ vm.enviando = false;
                 console.log(data);
             });
     }
+
+    $document.bind('scroll', function () {
+        vm.movida = window.pageYOffset > 10;
+
+        if (!$scope.$$phase && !$scope.$root.$$phase)
+            $scope.$apply();
+    });
 
 }
 emitMenu.$inject = ['$document', '$rootScope'];
@@ -145,9 +154,16 @@ function emitMenu($document, $rootScope) {
                     && rect.bottom > 0) || (rect.top < 0 && rect.bottom > 0);
 
 
-                if (top_adentro || bottom_adentro) {
+                if( (rect.height / rect.bottom < 2) && (top_adentro || bottom_adentro)){
+
+
                     $rootScope.$broadcast("emit-menu", {nombre: $element[0].id});
                 }
+
+                // if (top_adentro || bottom_adentro) {
+                //
+                //     $rootScope.$broadcast("emit-menu", {nombre: $element[0].id});
+                // }
 
                 // if (!top_adentro && !bottom_adentro) {
                 //     console.log('aden');
