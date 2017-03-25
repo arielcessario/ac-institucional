@@ -507,7 +507,7 @@ body{
   overflow: hidden;
   padding: 10px;
   position: relative;
-  max-height: 200px;
+  height: 200px;
   }
 
 .contenedor-trabajos:hover{
@@ -677,6 +677,12 @@ body{
 
 }
 
+#equipo video{
+  @media (max-width: 450px){
+    height: 100%!important;
+  }
+}
+
 #mision2, #mision{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
   background: #45484d; /* Old browsers */
@@ -687,4 +693,11 @@ body{
 
 
 
+}
+
+.column{
+  @media (max-width: 455px){
+
+  flex-direction: column!important;
+}
 }
