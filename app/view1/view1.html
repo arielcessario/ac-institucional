@@ -7,8 +7,8 @@
         </video>
         <div class="menu2" style="position: absolute; display: flex">
             <div class="contenedor-logo-menu" style="width: 200px;margin: auto;"><img src="./images/logo.svg" alt="">
-                <a ng-click="appCtrl.menu=!appCtrl.menu" href="" class="burguer example3"><span></span></a>
             </div>
+            <div ng-click="appCtrl.menu = !appCtrl.menu" ng-class="{'example3': appCtrl.menu}"><a href="" class="burguer"><span></span></a></div>
             <div style="margin: auto; text-align: center; display: flex">
                 <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='home'}"
                      ng-click="appCtrl.goToAnchor('home')">HOME
