@@ -69,20 +69,22 @@
                     'asunto': asunto,
                     'mensaje': mensaje
                 })
-                .success(
-                    function (data) {
+                .then(success(), failure);
 
-                        $timeout(hideMessage, 3000);
+            function success(data) {
 
-                        function hideMessage() {
-                            callback(data, true);
-                        }
+                $timeout(hideMessage, 3000);
 
-                        //goog_report_conversion('http://www.ac-desarrollos.com/#');
-                    })
-                .error(function (data) {
-                    console.log(data);
-                });
+                function hideMessage() {
+                    callback(data, true);
+                }
+
+                //goog_report_conversion('http://www.ac-desarrollos.com/#');
+            }
+
+            function failure(data) {
+                console.log(data);
+            }
         }
     }
 })();
