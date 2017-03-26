@@ -8,7 +8,9 @@
         <div class="menu2" style="position: absolute; display: flex">
             <div class="contenedor-logo-menu" style="width: 200px;margin: auto;"><img src="./images/logo.svg" alt="">
             </div>
-            <div ng-click="appCtrl.menu = !appCtrl.menu" ng-class="{'example3': appCtrl.menu}"><a href="" class="burguer"><span></span></a></div>
+            <div ng-click="appCtrl.menu = !appCtrl.menu" ng-class="{'example3': appCtrl.menu}"><a href=""
+                                                                                                  class="burguer"><span></span></a>
+            </div>
             <div style="margin: auto; text-align: center; display: flex">
                 <div class="menu-principal" ng-class="{'menu-selected':appCtrl.selected=='home'}"
                      ng-click="appCtrl.goToAnchor('home')">HOME
@@ -103,9 +105,9 @@
             <div style="max-width: 850px; text-align: center; margin: auto; margin-top: 8%">
                 <div class="logo"><img src="./images/logo.svg" alt=""></div>
                 <h1 ac-animate animation-in="flex-servicios-animate"
-                    style="text-align: center;margin-top: 40px; margin-left: 5px; margin-right: 5px"><em
-                        style="font-size: 32px; color: black; font-weight: bolder">Querés vender más? </em> Nosotros te
-                    damos la solución </h1>
+                    style="text-align: center;margin-top: 40px; margin-left: 5px; margin-right: 5px"><span
+                        style="font-size: 32px; color: black; font-weight: bolder">¿Querés vender más? ¿Tener mas clientes? </span><br>
+                    Nosotros te damos damos la mejor solución </h1>
 
             </div>
         </div>
@@ -116,32 +118,37 @@
 
     <div style="max-width: 850px; margin: auto; padding-top: 20px; position: relative; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
         <div class="rectangulo-titulo animated pulse"></div>
-        <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate">Querés Vender Más?<br>Atraer más clientes?</span>
-        <p class="parrafo-seccion" ac-animate animation-in="flex-trabajos-animate" style="color: white">Hay muchas
-            formas de vender más, pero ninguna tiene un crecimiento tan pronunciado como el e-commerce, que durante el
-            2016 se incrementó un 51% con respecto al año anterior,
-            esto significa un total de 17 millones de Argentinos comprando online.<em
-                    style="font-size: 20px; font-weight: bold; color:#E86C00; font-family: 'Raleway', sans-serif; font-style: normal ">
-                <br>Qué estás esperando para tener una parte de esas ventas?</em>
-            <br> <br>
-            <b style="font-size: 22px; color: white">Otras cosas que pasaron y en las cuales vos podés estar
-                incluido:</b> <br></p>
+        <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate">Más Clientes, Más Ventas</span>
+        <p class="parrafo-seccion" ac-animate animation-in="flex-trabajos-animate" style="color: white">
+            Anticiparse a las nuevas tendencias, demostrar que uno es la mejor opción, atención a los detalles,
+            generar la mejor experiencia para el comprador, innovación, facilidad al momento de comprar. Estas son solo
+            algunas de las muchas formas de vender más y en un solo lugar, se puede conseguir todo esto de una manera
+            fácil y directa.
+            <br>
+            <br>
+            Tu solución está a un click de distancia, las ventas en la web se incrementaron un 51% durante el 2016,
+            esto significa un total de <b>17 millones de Argentinos</b> comprando online!
+            <br>
+            <br>
+            <b style="font-size: 22px; color: white">
+                Si no estás convencido, mirá lo que pasó durante el 2016 en la web:
+            </b> <br></p>
         <div class="contenedor-flex" style="display: flex; flex-wrap: wrap; justify-content: center">
             <div class="flex-servicios" style="width: 178px" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-vender animated pulse"></div>
-                <p style="color: white">66% eligen envío a domicilio</p>
+                <p style="color: white">El 99% de la población adulta de Argentina compró online</p>
             </div>
             <div class="flex-servicios" style="width: 178px" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-vender animated pulse"></div>
-                <p style="color: white">88% pagó con tarjeta de crédito</p>
+                <p style="color: white">47 millones de pedidos online de $2.200 en promedio.</p>
             </div>
             <div class="flex-servicios" style="width: 178px" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-vender animated pulse"></div>
-                <p style="color: white">86% busca en móviles, contra 35% en el 2015</p>
+                <p style="color: white">El 66% de la gente prefiere que su producto llegue a domicilio antes que ir a comprarlo</p>
             </div>
             <div class="flex-servicios" style="width: 178px" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-vender animated pulse"></div>
-                <p style="color: white">Casi toda la población adulta de Argentina ya compró online</p>
+                <p style="color: white">El 60% de la gente prefiere su celular al momento de buscar un producto</p>
             </div>
         </div>
 
@@ -151,19 +158,31 @@
 <div class="contenedor" style="background-color: white" id="resultados" emit-menu>
     <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom:20px; padding-left: 10px; padding-right: 10px">
         <div class="rectangulo-titulo animated pulse2"></div>
-        <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black">Te garantizamos resultados:<em
-                style="color: #E86C00">Como?</em></span>
-        <p class="parrafo-seccion" ac-animate animation-in="flex-trabajos-animate" style="top: 128px;">Nosotros no te
-            ofrecemos solamente una página web, te ofrecemos una sucursal online, una sucursal que funciona las 24 horas
-            del día todos los días del año, una sucursal que no necesita empleados y que vos podés manejar desde tu
-            teléfono.
+        <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: black">
+            Resultados garantizados
+        </span>
+        <p class="parrafo-seccion" ac-animate animation-in="flex-trabajos-animate" style="top: 128px;">
+            La mayoría de las empresas ofrecen la creación de páginas web, nosotros no somos la mayoría de las empresas,
+            ofrecemos soluciones que se adaptan a lo que vos necesitás.
+            <br>
+            <b>¿Cómo hacemos esto?</b>
             <br><br>
 
-            Te ofrecemos cobrar en cuotas sin lidiar con bancos, te damos las herramientas para mostrar todos tus
-            productos de una manera atractiva y cómoda para tus clientes.
-            <br><br> Te enseñamos a gestionar envíos a domicilio. Te ayudamos a posicionarte y a utilizar todas las
-            herramientas online a tu favor.</p>
+            Nosotros no te ofrecemos una página de e-commerce, nosotros te damos una sucursal online, abierta las 24hs,
+            sin restricciones de ubicación, sin empleados y aún así generando una experiencia personalizada
+            para tus clientes a través de las últimas tendencias en diseño sin que vos te tengas que preocupar por nada.
+            <br><br>
 
+            Vas a poder vender con cuotas sin lidiar con bancos, te vas a poder financiar de una manera rápida y simple!
+            <br><br>
+
+            Te damos a vos el control de la sucursal desde la comodidad de tu teléfono, no te preocupes mas por irte de
+            vacaciones y que tu negocio no siga generando, esos problemas son del pasado, dejanos ayudarte a aprovechar
+            el futuro.
+            <br><br>
+
+            Y si ya tenés tu página, pedinos una consultoría gratuita para evaluar si tu página está preparada para
+            darte lo que vos esperás!<br><br>
 
     </div>
 </div>
@@ -179,20 +198,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
     <div style="max-width: 850px; margin: auto; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
         <div class="rectangulo-titulo animated pulse"></div>
         <span style="color: black" class="titulo-seccion" ac-animate animation-in="flex-servicios-animate">Todos nuestros Servicios</span>
-        <p class="parrafo-seccion" ac-animate animation-in="flex-trabajos-animate">Brindamos Diseños Web originales y a
-            la medida de cada
-            proyecto.<br>
-            Analizamos el perfil de cada cliente, el público al que apunta y las necesidades de comunicación. <br>
-            Optimizamos cada Sitio para buscadores, logrando diseños veloces y efectivos que convierten visitantes
-            en clientes.</p>
+        <p class="parrafo-seccion" ac-animate animation-in="flex-trabajos-animate">
+            Brindamos Diseños Web originales y a la medida de cada negocio.
+            <br><br>
+        </p>
         <div class="contenedor-flex" style="display: flex; flex-wrap: wrap; justify-content: center">
             <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-servicios"></div>
-                <p style="color: black">Diseñamos Sitios Web Profesionales y Únicos</p>
+                <p style="color: black">Diseños Profesionales y Únicos</p>
             </div>
             <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-servicios2"></div>
-                <p style="color: black">Diseño e Imagen corporativa</p>
+                <p style="color: black">Imagen corporativa</p>
             </div>
             <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-servicios"></div>
@@ -200,11 +217,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
             </div>
             <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-servicios2"></div>
-                <p style="color: black">Estrategias de marketing online - Adwords</p>
+                <p style="color: black">Marketing online</p>
             </div>
             <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-servicios"></div>
-                <p style="color: black">Presencia en redes sociales</p>
+                <p style="color: black">Redes sociales</p>
             </div>
             <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-servicios2"></div>
@@ -216,11 +233,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
             </div>
             <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-servicios2"></div>
-                <p style="color: black">Diseño y Envío de Newsletters</p>
+                <p style="color: black">Newsletters</p>
             </div>
             <div class="flex-servicios" ac-animate animation-in="flex-servicios-animate">
                 <div class="rectangulo-servicios"></div>
-                <p style="color: black">Campaña de Fidelización</p>
+                <p style="color: black">Fidelización</p>
             </div>
         </div>
     </div>
@@ -264,7 +281,7 @@ overflow: hidden" emit-menu>
         </div>
         <div class="cuadrado  media"
              style="display: flex; position: relative; flex-direction: column; margin-top: 150px; margin-left: 15px">
-            <h1 style="color: black; font-size: 18px">No dudes más, pedinos un presupuesto sin cargo:</h1>
+            <h1 style="color: black; font-size: 18px">Pedinos tu presupuesto personalizado! No pierdas mas ventas!</h1>
             <h2 style="font-size: 14px">El equipo <b>AC</b>Desarrollos <br>
                 <b>ventas@ac-desarrollos.com</b></h2>
         </div>
@@ -355,28 +372,19 @@ overflow: hidden" emit-menu>
     <div style="max-width: 850px; margin: auto; padding-top: 20px; position: relative; padding-bottom: 20px; padding-left: 10px; padding-right: 10px">
         <div class="rectangulo-titulo animated pulse3"></div>
         <span class="titulo-seccion" ac-animate animation-in="flex-servicios-animate" style="color: #A1CCA5">QUIENES<br>SOMOS</span>
-        <p class="parrafo-seccion" style="color: lightgrey" ac-animate animation-in="flex-servicios-animate">Somos
-            una empresa con más de tres años de experiencia en desarrollo de sistemas y
-            páginas web.
-            Además funcionamos como Incubadora de startups, ayudando a las Pymes a crecer mediante el uso de
-            herramientas subsidiarias nacionales. <br> <br>
-            <b style="font-size: 22px; color: #A1CCA5">NUESTRA MISION</b> <br>
-            Arrancamos con un sueño, acercar a las empresas en desarrollo las ultimas tecnologias del mercado a
-            nivel
-            informático,
-            brindandoles un servicio premium de primer nivel, a un costo accesible, y con el máximo soporte y
-            asesoramiento. <BR>
-            Luego, fuimos maximizando nuestra cartera de servicios mediante la creación de un sistema de gestión de
-            stock y ventas para la pequeña y mediana empresa, que fue creciendo hasta convertirse en una herramienta
-            indispensable para cualquier comercio minorista que desee comenzar con una gestión transparente,
-            intuitiva y
-            altamente funcional de sus movimientos. <BR>
-            A partir de la buena experiencia con nuestros clientes, el boca en boca nos permitió seguir creciendo
-            gracias a un servicio de calidad y personalizado en todos los niveles de la administración de
-            sistemas.<br>
-            En resumidas cuentas, nuestra misión es ayudar, queremos que en Argentina las cosas salgan, y ponemos
-            todo
-            de nuestra parte para que cada empresa en este país tenga servicios de máxima calidad a un precio justo.
+        <p class="parrafo-seccion" style="color: lightgrey" ac-animate animation-in="flex-servicios-animate">
+            Somos una empresa jóven que no quiso empezar como todas las demás. Nuestra historia se remonta
+            al 2012 cuando empezamos a asorar a PYMES en la instalación de sistemas. Con el tiempo nos dimos cuenta
+            que nuestra vocación estaba puesta en la generación de negocios y la administración de emprendimientos.
+            <br><br>
+            A partir de ese momento comenzamos a ofrecer soluciones integrales en la web, no para mejorar nuestro negocio,
+            sino para generar una red de emprendedores que pudieran nutrirse de la experiencia de todos.
+            <br><br>
+            En estos momentos nos especializamos en hacer de las pymes, empresas de alta competitividad tecnológica a
+            precios muy competitivos.
+            <br><br>
+            No solo queremos que tus ventas sean mayores, sino que tu negocio como empresa, crezca y se desarrolle,
+            deseamos, entre vos y nosotros, poder construir un futuro mejor para todas las PYMES de Argentina.
         </p>
     </div>
 
@@ -442,7 +450,7 @@ overflow: hidden" emit-menu>
         <div class="contenedor-estadisticas" ac-animate animation-in="flex-servicios-animate"
              style="flex: 1;min-width: 150px; min-height: 150px">
             <h1>10</h1>
-            <h2>CAMPANAS SOCIALES</h2>
+            <h2>CAMPAÑAS SOCIALES</h2>
         </div>
         <div class="contenedor-estadisticas" ac-animate animation-in="flex-servicios-animate"
              style="flex: 1;min-width: 150px; min-height: 150px">
